@@ -1,0 +1,15 @@
+C:\Users\LuthianniAlves\Documents\ControleFinanceiro\ControleFinanceiro.DAL\obj\Debug\netcoreapp3.1\ControleFinanceiro.DAL.csproj.AssemblyReference.cache
+C:\Users\LuthianniAlves\Documents\ControleFinanceiro\ControleFinanceiro.DAL\obj\Debug\netcoreapp3.1\ControleFinanceiro.DAL.AssemblyInfoInputs.cache
+C:\Users\LuthianniAlves\Documents\ControleFinanceiro\ControleFinanceiro.DAL\obj\Debug\netcoreapp3.1\ControleFinanceiro.DAL.AssemblyInfo.cs
+C:\Users\LuthianniAlves\Documents\ControleFinanceiro\ControleFinanceiro.DAL\obj\Debug\netcoreapp3.1\ControleFinanceiro.DAL.csproj.CoreCompileInputs.cache
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.DAL\bin\Debug\netcoreapp3.1\ControleFinanceiro.DAL.deps.json
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.DAL\bin\Debug\netcoreapp3.1\ControleFinanceiro.DAL.runtimeconfig.json
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.DAL\bin\Debug\netcoreapp3.1\ControleFinanceiro.DAL.runtimeconfig.dev.json
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.DAL\bin\Debug\netcoreapp3.1\ControleFinanceiro.DAL.dll
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.DAL\bin\Debug\netcoreapp3.1\ControleFinanceiro.DAL.pdb
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.DAL\bin\Debug\netcoreapp3.1\ControleFinanceiro.BLL.dll
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.DAL\bin\Debug\netcoreapp3.1\ControleFinanceiro.BLL.pdb
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.DAL\obj\Debug\netcoreapp3.1\ControleFinanceiro.DAL.csproj.CopyComplete
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.DAL\obj\Debug\netcoreapp3.1\ControleFinanceiro.DAL.dll
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.DAL\obj\Debug\netcoreapp3.1\ControleFinanceiro.DAL.pdb
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.DAL\obj\Debug\netcoreapp3.1\ControleFinanceiro.DAL.genruntimeconfig.cache
