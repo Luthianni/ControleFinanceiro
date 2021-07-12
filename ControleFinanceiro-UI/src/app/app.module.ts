@@ -18,9 +18,9 @@ import { NovaCategoriaComponent } from './components/Categoria/nova-categoria/no
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatSelectModule } from '@angular/material/select'; 
-import { ReactiveFormsModule } from '@angular/forms';
-import { FormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 

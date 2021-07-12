@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bk+2PMf9RPfrYGz3CHEMNZwqCcJPWj722+Z5zmEqxw29nLGVsB9ILkDRdZ+tESDlCf5RkKP9tXq8KXs63JxUbA==",
+  "dgSpecHash": "2jeRSLYEt0UMu2vjUIe5vg86cnetpRSG9FGQg+3+5LYpXyXdK1KtZQQy+D2ds6PBeHFpIe20hKLrpaa7mvLLDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LuthianniAlves\\Documents\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
+  "projectFilePath": "C:\\Users\\LuthianniAlves\\Documents\\ControleFInanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.15\\microsoft.aspnetcore.cryptography.internal.3.1.15.nupkg.sha512",
