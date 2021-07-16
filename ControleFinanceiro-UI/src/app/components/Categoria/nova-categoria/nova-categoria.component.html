@@ -3,8 +3,8 @@
         <mat-card-header>
             <mat-card-title><h3>Cadastro de categorias</h3></mat-card-title>
         </mat-card-header>
-        
-        <form [formGroup]="formulario">
+
+        <form [formGroup]="formulario" (ngSubmit)= "EnviarFormulario()">
 
             <mat-card-content>
                 <div>

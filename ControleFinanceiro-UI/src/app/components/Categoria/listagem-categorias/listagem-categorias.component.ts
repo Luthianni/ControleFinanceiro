@@ -10,9 +10,9 @@ import { MatTableDataSource } from '@angular/material/table';
 export class ListagemCategoriasComponent implements OnInit {
 
   categorias = new MatTableDataSource<any>();
-  displayedColumns!: string[];
+  displayedColumns: string[];
 
-  constructor( 
+  constructor(
     private categoriasService: CategoriasService
     ) { }
 

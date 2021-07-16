@@ -1,8 +1,18 @@
 .dadosCategorias {
-   padding: 30px 30px 30px 30px; 
+   padding: 30px 30px 30px 30px;
 }
 
 .tabela {
-    width: 100px;
+    width: 100%;
     padding-top: 30px;
 }
+
+.divcar{
+  padding: 50px;
+  width: 600px;
+}
+
+.mat-form-field.mat-form-field{
+  width: 500px;
+}
+
