@@ -4,21 +4,20 @@ import { Observable } from 'rxjs';
 import { Categoria } from './../models/Categoria';
 
 const httpOptions = {
-  headers: new HttpHeaders ({
-    'Content-Type' : 'application/json',
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json',
   }),
 };
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CategoriasService {
-
   url = 'api/Categorias';
 
   constructor(private http: HttpClient) {}
 
-  PegarTodos() : Observable<Categoria[]> {
+  PegarTodos(): Observable<Categoria[]> {
     return this.http.get<Categoria[]>(this.url);
   }
 
@@ -26,20 +25,25 @@ export class CategoriasService {
     const apiUrl = `${this.url}/${categoriaId}`;
     return this.http.get<Categoria>(apiUrl);
   }
-  NovaCategoria(categoria : Categoria) : Observable<any> {
+  NovaCategoria(categoria: Categoria): Observable<any> {
     return this.http.post<Categoria>(this.url, categoria, httpOptions);
   }
 
   AtualizarCategoria(
-    categoriaId: number, 
+    categoriaId: number,
     categoria: Categoria
-    ): Observable<any> {
+  ): Observable<any> {
     const apiUrl = `${this.url}/${categoriaId}`;
     return this.http.put<Categoria>(apiUrl, categoria, httpOptions);
   }
 
-  ExcluirCategoria(categoriaId: number) : Observable<any> {
+  ExcluirCategoria(categoriaId: number): Observable<any> {
     const apiUrl = `${this.url}/${categoriaId}`;
     return this.http.delete<number>(apiUrl, httpOptions);
+  }
+
+  FiltrarCategorias(nomeCategoria: string): Observable<Categoria[]> {
+    const apiUrl = `${this.url}/FiltrarCategorias/${nomeCategoria}`;
+    return this.http.get<Categoria[]>(apiUrl);
   }
 }

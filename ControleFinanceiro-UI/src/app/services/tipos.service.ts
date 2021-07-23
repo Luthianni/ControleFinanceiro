@@ -4,15 +4,14 @@ import { Observable } from 'rxjs';
 import { Tipo } from '../models/Tipo';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class TiposService {
-
   url: string = 'api/Tipos';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  PegarTodos() : Observable<Tipo[]> {
+  PegarTodos(): Observable<Tipo[]> {
     return this.http.get<Tipo[]>(this.url);
   }
 }

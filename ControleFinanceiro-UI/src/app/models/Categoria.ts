@@ -1,4 +1,4 @@
-import { Tipo } from "./Tipo";
+import { Tipo } from './Tipo';
 
 export class Categoria {
   categoriaId: number;

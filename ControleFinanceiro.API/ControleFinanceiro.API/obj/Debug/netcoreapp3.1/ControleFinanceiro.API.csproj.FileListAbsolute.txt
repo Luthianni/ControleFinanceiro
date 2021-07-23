@@ -174,3 +174,6 @@ C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.API\Cont
 C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.API\ControleFinanceiro.API\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.API\ControleFinanceiro.API\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.API\ControleFinanceiro.API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.API\ControleFinanceiro.API\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.API\ControleFinanceiro.API\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\LuthianniAlves\Documents\ControleFInanceiro\ControleFinanceiro.API\ControleFinanceiro.API\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll

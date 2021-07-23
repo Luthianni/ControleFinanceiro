@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Z5SWr2flC+sGUIUBxya/erTIZZR0+kFl+mXk2LzAre4y2B5V9lN3wicsws3SvTPZB8RPpRtLEqAicvT4FTqDMg==",
+  "dgSpecHash": "WrhSOcSjJHnYAd7Rv1NrcXQy5BBLQAfQxHuZIM/dxBtCSDFRcn63HadxA9rNcKMWJ21wMImMONS88SOzA5wqcw==",
   "success": true,
   "projectFilePath": "C:\\Users\\LuthianniAlves\\Documents\\ControleFInanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\LuthianniAlves\\.nuget\\packages\\fluentvalidation\\9.2.0\\fluentvalidation.9.2.0.nupkg.sha512",
+    "C:\\Users\\LuthianniAlves\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.2.0\\fluentvalidation.aspnetcore.9.2.0.nupkg.sha512",
+    "C:\\Users\\LuthianniAlves\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.2.0\\fluentvalidation.dependencyinjectionextensions.9.2.0.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.15\\microsoft.aspnetcore.cryptography.internal.3.1.15.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.15\\microsoft.aspnetcore.cryptography.keyderivation.3.1.15.nupkg.sha512",

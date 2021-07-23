@@ -6,58 +6,66 @@ import { Categoria } from 'src/app/models/Categoria';
 import { Tipo } from 'src/app/models/Tipo';
 import { CategoriasService } from 'src/app/services/categorias.service';
 import { TiposService } from 'src/app/services/tipos.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-atualizar-categoria',
   templateUrl: './atualizar-categoria.component.html',
-  styleUrls: ['../listagem-categorias/listagem-categorias.component.css']
+  styleUrls: ['../listagem-categorias/listagem-categorias.component.css'],
 })
 export class AtualizarCategoriaComponent implements OnInit {
   nomeCategoria: string;
-  categoriaId: number
+  categoriaId: number;
   categoria: Observable<Categoria>;
   tipos: Tipo[];
   formulario: any;
 
-  constructor(private router : Router,
+  constructor(
+    private router: Router,
     private route: ActivatedRoute,
     private tiposService: TiposService,
-    private categoriasService: CategoriasService
-    ) { }
+    private categoriasService: CategoriasService,
+    private snackBar: MatSnackBar,
+  ) {}
 
   ngOnInit(): void {
-
     this.categoriaId = this.route.snapshot.params.id;
-    this.tiposService.PegarTodos().subscribe(resultado => {
+    this.tiposService.PegarTodos().subscribe((resultado) => {
       this.tipos = resultado;
     });
 
     this.categoriasService
-    .PegarCategoriaPeloId(this.categoriaId)
-    .subscribe(resultado => {
-      this.nomeCategoria = resultado.nome;
-      this.formulario = new FormGroup({
-        categoriaId: new FormControl(resultado.categoriaId),
-        nome: new FormControl(resultado.nome),
-        icone: new FormControl(resultado.icone),
-        tipoId: new FormControl(resultado.tipoId),
+      .PegarCategoriaPeloId(this.categoriaId)
+      .subscribe((resultado) => {
+        this.nomeCategoria = resultado.nome;
+        this.formulario = new FormGroup({
+          categoriaId: new FormControl(resultado.categoriaId),
+          nome: new FormControl(resultado.nome),
+          icone: new FormControl(resultado.icone),
+          tipoId: new FormControl(resultado.tipoId),
+        });
       });
-    });
   }
 
-  get propriedade(){
+  get propriedade() {
     return this.formulario.controls;
   }
 
   EnviarFormulario(): void {
     const categoria = this.formulario.value;
-    this.categoriasService.AtualizarCategoria(this.categoriaId, categoria)
-    .subscribe(resultado => {
-      this.router.navigate(['categorias/listagemcategorias']);
-    });
+    this.categoriasService
+      .AtualizarCategoria(this.categoriaId, categoria)
+      .subscribe((resultado) => {
+        this.router.navigate(['categorias/listagemcategorias']);
+        this.snackBar.open(resultado.mensagem, null, {
+          duration: 2000,
+          horizontalPosition: 'right',
+          verticalPosition: 'top'
+        });
+      });
   }
 
-  VoltarListagem() : void {
+  VoltarListagem(): void {
     this.router.navigate(['categorias/listagemcategorias']);
   }
 }

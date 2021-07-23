@@ -11,7 +11,7 @@ const routes: Routes = [
 },
 
 {
-  path : 'categorias/novacategorias',
+  path : 'categorias/novacategoria',
   component : NovaCategoriaComponent
 },
 
