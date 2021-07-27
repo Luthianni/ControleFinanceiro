@@ -34,3 +34,18 @@
 .autoCompleteInput{
   width: 500px;
 }
+
+.textosErros{
+  font-weight: 900;
+  color: red;
+}
+
+.divErros {
+  padding: 20px;
+
+}
+
+.cardErros{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

@@ -19,6 +19,8 @@ export class AtualizarCategoriaComponent implements OnInit {
   categoria: Observable<Categoria>;
   tipos: Tipo[];
   formulario: any;
+  erros: string[];
+
 
   constructor(
     private router: Router,
@@ -29,6 +31,7 @@ export class AtualizarCategoriaComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.erros
     this.categoriaId = this.route.snapshot.params.id;
     this.tiposService.PegarTodos().subscribe((resultado) => {
       this.tipos = resultado;
