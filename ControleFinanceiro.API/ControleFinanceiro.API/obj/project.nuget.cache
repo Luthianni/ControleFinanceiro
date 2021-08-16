@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WrhSOcSjJHnYAd7Rv1NrcXQy5BBLQAfQxHuZIM/dxBtCSDFRcn63HadxA9rNcKMWJ21wMImMONS88SOzA5wqcw==",
+  "dgSpecHash": "hXxlLCborlMJeMni0SLW8nPFULuTWFTDHtDLYMMOyOoTCX2FB6eEo2L5FOfeDWdy1LzZfQIBLVdTROjz5JkaJQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\LuthianniAlves\\Documents\\ControleFInanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
   "expectedPackageFiles": [
@@ -16,11 +16,13 @@
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.15\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.15.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.15\\microsoft.aspnetcore.jsonpatch.3.1.15.nupkg.sha512",
+    "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.15\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.15.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.nodeservices\\3.1.15\\microsoft.aspnetcore.nodeservices.3.1.15.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
+    "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.spaservices\\3.1.15\\microsoft.aspnetcore.spaservices.3.1.15.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\3.1.15\\microsoft.aspnetcore.spaservices.extensions.3.1.15.nupkg.sha512",
     "C:\\Users\\LuthianniAlves\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

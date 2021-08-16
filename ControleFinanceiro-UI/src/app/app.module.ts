@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { TiposService } from '../app/services/tipos.service';
 import { CategoriasService } from './services/categorias.service';
+import { FuncoesService } from './services/funcoes.service';
 import {
   ListagemCategoriasComponent,
   DialogExclusaoCategoriasComponent,
@@ -28,7 +29,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatSortModule} from '@angular/material/sort';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatProgressBarModule} from '@angular/material/progress-bar'
 import { AtualizarCategoriaComponent } from './components/Categoria/atualizar-categoria/atualizar-categoria.component';
+import { ListagemFuncoesComponent } from './components/listagem-funcoes/listagem-funcoes.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,7 @@ import { AtualizarCategoriaComponent } from './components/Categoria/atualizar-ca
     NovaCategoriaComponent,
     AtualizarCategoriaComponent,
     DialogExclusaoCategoriasComponent,
+    ListagemFuncoesComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,9 +62,10 @@ import { AtualizarCategoriaComponent } from './components/Categoria/atualizar-ca
     ReactiveFormsModule,
     FormsModule,
     MatSortModule,
+    MatProgressBarModule,
     MatSnackBarModule,
   ],
-  providers: [TiposService, HttpClientModule, CategoriasService],
+  providers: [TiposService, HttpClientModule, CategoriasService, FuncoesService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

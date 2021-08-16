@@ -20,5 +20,7 @@ namespace ControleFinanceiro.DAL.Interfaces
 
         Task Excluir(string id);
         Task Excluir(int id);
+
+        Task Excluir(TEntity entity);
     }
 }
