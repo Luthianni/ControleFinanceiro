@@ -35,7 +35,6 @@ namespace ControleFinanceiro.API
             services.AddIdentity<Usuario, Funcao>().AddEntityFrameworkStores<Contexto>();
 
             services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
-
             services.AddScoped<ITipoRepositorio, TipoRepositorio>();
             services.AddScoped<IFuncaoRepositorio, FuncaoRepositorio>();
 
