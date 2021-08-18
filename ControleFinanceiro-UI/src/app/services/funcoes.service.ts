@@ -13,7 +13,7 @@ const httpOtions = {
   providedIn: 'root'
 })
 export class FuncoesService {
-  url = 'api/funcoes';
+  url = 'https://localhost:44317/api/funcoes';
 
   constructor(private http: HttpClient) { }
 

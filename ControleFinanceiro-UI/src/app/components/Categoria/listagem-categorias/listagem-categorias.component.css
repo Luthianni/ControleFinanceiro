@@ -1,18 +1,18 @@
 .dadosCategorias {
-   padding: 30px 30px 30px 30px;
+  padding: 30px 30px 30px 30px;
 }
 
 .tabela {
-    width: 100%;
-    padding-top: 30px;
+  width: 100%;
+  padding-top: 30px;
 }
 
-.divcar{
+.divCard {
   padding: 50px;
   width: 600px;
 }
 
-.mat-form-field.mat-form-field{
+.mat-form-field.mat-form-field {
   width: 500px;
 }
 
@@ -31,21 +31,20 @@
   padding-bottom: 30px;
 }
 
-.autoCompleteInput{
+.autoCompleteInput {
   width: 500px;
 }
 
-.textosErros{
+.textoErros {
   font-weight: 900;
-  color: red;
+  color: #c0392b;
 }
 
 .divErros {
   padding: 20px;
-
 }
 
-.cardErros{
+.cardErros {
   padding-top: 30px;
   padding-bottom: 30px;
 }

@@ -2,7 +2,7 @@
   <mat-progress-bar mode="buffer"></mat-progress-bar>
 </div>
 
-<div class="divcard" *ngIf="formulario">
+<div class="divCard" *ngIf="formulario">
   <mat-card>
     <mat-card-header>
       <mat-card-title><h3>Cadastro de categorias</h3></mat-card-title>
@@ -33,13 +33,18 @@
               type="text"
               matInput
               formControlName="nome"
-              placeholder="Digite o nome da categoria"
-              required
+              placeholder="Digite o nome da categoria" required
             />
-            <mat-error
-              *ngIf="propriedade.nome.touched && propriedade.nome.invalid"
-            >
+            <mat-error *ngIf="propriedade.nome.touched && propriedade.nome.invalid">
               <sup>*</sup> Digite o nome da categoria
+            </mat-error>
+
+            <mat-error *ngIf="propriedade.nome.errors?.minlength">
+              <sup>*</sup> Use mais caracteres
+            </mat-error>
+
+            <mat-error *ngIf="propriedade.nome.errors?.maxlength">
+              <sup>*</sup> Use menos caracteres
             </mat-error>
           </mat-form-field>
         </div>
@@ -51,31 +56,38 @@
               type="text"
               matInput
               formControlName="icone"
-              placeholder="Digite o código do icone"
-              required
+              placeholder="Digite o código do ícone" required
+
             />
 
-            <mat-error
-              *ngIf="propriedade.icone.trouched && propriedade.icone.invalid"
-            >
-              <sup>*</sup> Digite o código do Ícone
+            <mat-error *ngIf="propriedade.icone.touched && propriedade.icone.invalid">
+              <sup>*</sup> Digite o código do ícone
             </mat-error>
+
+            <mat-error *ngIf="propriedade.icone.errors?.minlength">
+              <sup>*</sup> Use mais caracteres
+            </mat-error>
+
+            <mat-error *ngIf="propriedade.icone.errors?.maxlength">
+              <sup>*</sup> Use menos caracteres
+            </mat-error>
+
           </mat-form-field>
         </div>
 
         <div>
           <mat-form-field>
             <mat-label>Selecione o tipo adequado</mat-label>
-            <mat-select formControlName="tipoId" required>
+            <mat-select formControlName="tipoId" rquired>
               <mat-option *ngFor="let tipo of tipos" [value]="tipo.tipoId">{{
                 tipo.nome
               }}</mat-option>
             </mat-select>
-            <mat-error
-              *ngIf="propriedade.tipoId.touched && propriedade.tipoId.invalid"
-            >
+
+            <mat-error *ngIf="propriedade.tipoId.touched && propriedade.tipoId.invalid">
               <sup>*</sup> Selecione o tipo adequado
             </mat-error>
+
           </mat-form-field>
         </div>
       </mat-card-content>
@@ -84,12 +96,7 @@
 
       <mat-card-actions>
         <div>
-          <button
-            type="submit"
-            mat-stroked-button
-            color="primary"
-            [disabled]="formulario.invalid"
-          >
+          <button type="submit" mat-stroked-button color="primary" [disabled]="formulario.invalid">
             Salvar
           </button>
           <button mat-stroked-button type="button" (click)="VoltarListagem()">

@@ -93,10 +93,10 @@ namespace ControleFinanceiro.API
             app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = Path.Combine(Directory.GetCurrentDirectory(), "ControleFinanceiro-UI");
-                if (env.IsDevelopment())
-                {
-                    spa.UseProxyToSpaDevelopmentServer($"http://localhost:4200/");
-                }
+                //if (env.IsDevelopment())
+                //{
+                //    spa.UseProxyToSpaDevelopmentServer($"http://localhost:4200/");
+                //}
             });
         }
     }

@@ -2,7 +2,7 @@
   <mat-progress-bar mode="buffer"></mat-progress-bar>
 </div>
 
-<div class="dadosCategorias" *ngIf="categorias">
+<div class="dadosCategorias">
   <div class="cabecalho">
     <mat-grid-list cols="2" rowHeight="50px">
       <mat-grid-tile>
@@ -14,11 +14,13 @@
           color="primary"
           routerLink="/categorias/novacategoria"
         >
-          Nova Categoria
+          Nova categoria
         </button>
       </mat-grid-tile>
     </mat-grid-list>
   </div>
+
+  <mat-divider></mat-divider>
 
   <div class="divAutoComplete">
     <form>
@@ -30,7 +32,7 @@
           [formControl]="autoCompleteInput"
           [matAutocomplete]="auto"
         />
-        <mat-autocomplete autoActiveFirtOption #auto="matAutocomplete">
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
           <mat-option
             *ngFor="let nome of nomesCategorias | async"
             [value]="nome"
@@ -41,7 +43,7 @@
     </form>
   </div>
 
-  <table
+  <table *ngIf="categorias"
     mat-table
     matSort
     [dataSource]="categorias"
@@ -82,7 +84,7 @@
           color="warn"
           (click)="AbrirDialog(categoria.categoriaId, categoria.nome)"
         >
-          <mat-icon>delete forever</mat-icon>
+          <mat-icon>delete_forever</mat-icon>
         </button>
       </td>
     </ng-container>
@@ -92,7 +94,7 @@
   </table>
 
   <mat-paginator
-    [pageSizeOptions]="[5, 10, 15, 20]"
-    showFirstLastButtons
-  ></mat-paginator>
+      [pageSizeOptions]="[5, 10, 15, 20]"
+      showFirstLastButtons
+    ></mat-paginator>
 </div>
