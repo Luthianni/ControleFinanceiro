@@ -35,7 +35,6 @@ namespace ControleFinanceiro.API
             services.AddIdentity<Usuario, Funcao>().AddEntityFrameworkStores<Contexto>();
 
             services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
-
             services.AddScoped<ITipoRepositorio, TipoRepositorio>();
             services.AddScoped<IFuncaoRepositorio, FuncaoRepositorio>();
 
@@ -93,10 +92,10 @@ namespace ControleFinanceiro.API
             app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = Path.Combine(Directory.GetCurrentDirectory(), "ControleFinanceiro-UI");
-                //if (env.IsDevelopment())
+               // if (env.IsDevelopment())
                 //{
-                //    spa.UseProxyToSpaDevelopmentServer($"http://localhost:4200/");
-                //}
+               //     spa.UseProxyToSpaDevelopmentServer($"http://localhost:4200/");
+               // }
             });
         }
     }

@@ -49,7 +49,15 @@ namespace ControleFinanceiro.DAL.Repositorios
 
         public IQueryable<Funcao> FiltrarFuncoes(string nomeFuncao)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var entity = _contexto.Funcoes.Where(f => f.Name.Contains(nomeFuncao));
+                return entity;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            };
         }
     }
 }

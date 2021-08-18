@@ -13,7 +13,7 @@ const httpOtions = {
   providedIn: 'root'
 })
 export class FuncoesService {
-  url = 'https://localhost:44317/api/funcoes';
+  url = 'https://localhost:44317/api/Funcoes';
 
   constructor(private http: HttpClient) { }
 
@@ -38,5 +38,10 @@ export class FuncoesService {
   ExcluirFuncao(funcaoId: string): Observable<any>{
     const apiUrl = `${this.url}/${funcaoId}`;
     return this.http.delete<string>(apiUrl, httpOtions);
+  }
+
+  FiltrarFuncoes(nomeFuncao: string): Observable<Funcao[]>{
+    const apiUrl = `${this.url}/FiltrarFuncoes/${nomeFuncao}`;
+    return this.http.get<Funcao[]>(apiUrl);
   }
 }

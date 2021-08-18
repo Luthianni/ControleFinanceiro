@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 namespace ControleFinanceiro.API.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class FuncoesController : Controller
     {
         private readonly IFuncaoRepositorio _funcaoRepositorio;
@@ -17,7 +19,7 @@ namespace ControleFinanceiro.API.Controllers
             _funcaoRepositorio = funcaoRepositorio;
         }
 
-        // GET: Funcoes
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Funcao>>> GetFuncoes()
         {
