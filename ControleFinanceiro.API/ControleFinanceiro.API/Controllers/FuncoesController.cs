@@ -1,25 +1,26 @@
-﻿using ControleFinanceiro.API.ViewModels;
-using ControleFinanceiro.BLL.Models;
-using ControleFinanceiro.DAL.Interfaces;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using ControleFinanceiro.BLL.Models;
+using ControleFinanceiro.DAL.Interfaces;
+using ControleFinanceiro.API.ViewModels;
+using Microsoft.AspNetCore.Authorization;
+
 namespace ControleFinanceiro.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FuncoesController : Controller
+    [Authorize(Roles = "Administrador")]
+    public class FuncoesController : ControllerBase
     {
         private readonly IFuncaoRepositorio _funcaoRepositorio;
-        
 
         public FuncoesController(IFuncaoRepositorio funcaoRepositorio)
         {
             _funcaoRepositorio = funcaoRepositorio;
         }
 
-        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Funcao>>> GetFuncoes()
         {

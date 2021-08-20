@@ -1,21 +1,22 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Funcao } from './../models/Funcao';
 import { Observable } from 'rxjs';
-import { Funcao } from '../models/Funcao';
+import { HttpHeaders, HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 
-const httpOtions = {
-  headers : new HttpHeaders({
-    'Content-Type' : 'application/json'
-  })
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json',
+    'Authorization': `Bearer ${localStorage.getItem('TokenUsuarioLogado')}`
+  }),
 };
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FuncoesService {
-  url = 'https://localhost:44317/api/Funcoes';
+url = 'api/Funcoes';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   PegarTodos(): Observable<Funcao[]>{
     return this.http.get<Funcao[]>(this.url);
@@ -27,17 +28,18 @@ export class FuncoesService {
   }
 
   NovaFuncao(funcao: Funcao): Observable<any>{
-    return this.http.post<Funcao>(this.url, funcao, httpOtions);
+    console.log(funcao);
+    return this.http.post<Funcao>(this.url, funcao, httpOptions);
   }
 
-  AtualizarFuncao(funcaoId: string, funcao: Funcao) : Observable<any>{
+  AtualizarFuncao(funcaoId: string, funcao: Funcao): Observable<any>{
     const apiUrl = `${this.url}/${funcaoId}`;
-    return this.http.put<Funcao>(apiUrl, funcao, httpOtions);
+    return this.http.put<Funcao>(apiUrl, funcao, httpOptions);
   }
 
   ExcluirFuncao(funcaoId: string): Observable<any>{
     const apiUrl = `${this.url}/${funcaoId}`;
-    return this.http.delete<string>(apiUrl, httpOtions);
+    return this.http.delete<string>(apiUrl, httpOptions);
   }
 
   FiltrarFuncoes(nomeFuncao: string): Observable<Funcao[]>{

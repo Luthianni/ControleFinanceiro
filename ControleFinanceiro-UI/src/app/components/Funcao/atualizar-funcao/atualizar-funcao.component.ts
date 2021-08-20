@@ -1,38 +1,48 @@
+import { validateHorizontalPosition } from '@angular/cdk/overlay';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FuncoesService } from 'src/app/services/funcoes.service';
 
 @Component({
-  selector: 'app-nova-funcao',
-  templateUrl: './nova-funcao.component.html',
+  selector: 'app-atualizar-funcao',
+  templateUrl: './atualizar-funcao.component.html',
   styleUrls: ['../listagem-funcoes/listagem-funcoes.component.css'],
 })
-export class NovaFuncaoComponent implements OnInit {
+export class AtualizarFuncaoComponent implements OnInit {
+  funcaoId: string;
+  nomeFuncao: string;
   formulario: any;
   erros: string[];
 
   constructor(
     private router: Router,
+    private route: ActivatedRoute,
     private funcoesService: FuncoesService,
     private snackBar: MatSnackBar
   ) {}
 
   ngOnInit(): void {
     this.erros = [];
+    this.funcaoId = this.route.snapshot.params.id;
 
-    this.formulario = new FormGroup({
-      name: new FormControl(null, [
-        Validators.required,
-        Validators.minLength(1),
-        Validators.maxLength(50),
-      ]),
-      descricao: new FormControl(null, [
-        Validators.required,
-        Validators.minLength(1),
-        Validators.maxLength(50),
-      ]),
+    this.funcoesService.PegarPeloId(this.funcaoId).subscribe((resultado) => {
+      this.nomeFuncao = resultado.name;
+
+      this.formulario = new FormGroup({
+        id: new FormControl(resultado.id),
+        name: new FormControl(resultado.name, [
+          Validators.required,
+          Validators.minLength(1),
+          Validators.maxLength(50),
+        ]),
+        descricao: new FormControl(resultado.descricao, [
+          Validators.required,
+          Validators.minLength(1),
+          Validators.maxLength(50),
+        ]),
+      });
     });
   }
 
@@ -41,9 +51,9 @@ export class NovaFuncaoComponent implements OnInit {
   }
 
   EnviarFormulario(): void {
-    const funcao = this.formulario.value;
     this.erros = [];
-    this.funcoesService.NovaFuncao(funcao).subscribe(
+    const funcao = this.formulario.value;
+    this.funcoesService.AtualizarFuncao(this.funcaoId, funcao).subscribe(
       (resultado) => {
         this.router.navigate(['/funcoes/listagemfuncoes']);
         this.snackBar.open(resultado.mensagem, null, {
@@ -52,10 +62,9 @@ export class NovaFuncaoComponent implements OnInit {
           verticalPosition: 'top',
         });
       },
-
       (err) => {
         if (err.status === 400) {
-          for (const campo in err.error.erros) {
+          for (const campo in err.console.error.errors) {
             if (err.error.errors.hasOwnProperty(campo)) {
               this.erros.push(err.error.errors[campo]);
             }

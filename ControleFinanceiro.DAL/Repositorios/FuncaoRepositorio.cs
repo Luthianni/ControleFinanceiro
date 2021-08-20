@@ -11,7 +11,6 @@ namespace ControleFinanceiro.DAL.Repositorios
     {
         private readonly Contexto _contexto;
         private readonly RoleManager<Funcao> _gerenciadorFuncoes;
-
         public FuncaoRepositorio(Contexto contexto, RoleManager<Funcao> gerenciadorFuncoes) : base(contexto)
         {
             _contexto = contexto;
@@ -26,6 +25,7 @@ namespace ControleFinanceiro.DAL.Repositorios
             }
             catch (Exception ex)
             {
+
                 throw ex;
             }
         }
@@ -40,9 +40,11 @@ namespace ControleFinanceiro.DAL.Repositorios
                 f.Descricao = funcao.Descricao;
 
                 await _gerenciadorFuncoes.UpdateAsync(f);
+
             }
             catch (Exception ex)
             {
+
                 throw ex;
             }
         }
@@ -56,8 +58,9 @@ namespace ControleFinanceiro.DAL.Repositorios
             }
             catch (Exception ex)
             {
+
                 throw ex;
-            };
+            }
         }
     }
 }

@@ -31,8 +31,12 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatProgressBarModule} from '@angular/material/progress-bar'
 import { AtualizarCategoriaComponent } from './components/Categoria/atualizar-categoria/atualizar-categoria.component';
-import { ListagemFuncoesComponent } from './components/Funcao/listagem-funcoes/listagem-funcoes.component';
+import {
+  ListagemFuncoesComponent,
+  DialogExclusaoFuncoesComponent,
+} from './components/Funcao/listagem-funcoes/listagem-funcoes.component';
 import { NovaFuncaoComponent } from './components/Funcao/nova-funcao/nova-funcao.component';
+import { AtualizarFuncaoComponent } from './components/Funcao/atualizar-funcao/atualizar-funcao.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +47,9 @@ import { NovaFuncaoComponent } from './components/Funcao/nova-funcao/nova-funcao
     DialogExclusaoCategoriasComponent,
     ListagemFuncoesComponent,
     NovaFuncaoComponent,
+    AtualizarFuncaoComponent,
+    DialogExclusaoFuncoesComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -66,6 +73,7 @@ import { NovaFuncaoComponent } from './components/Funcao/nova-funcao/nova-funcao
     MatSortModule,
     MatProgressBarModule,
     MatSnackBarModule,
+
   ],
   providers: [TiposService, HttpClientModule, CategoriasService, FuncoesService],
   bootstrap: [AppComponent],

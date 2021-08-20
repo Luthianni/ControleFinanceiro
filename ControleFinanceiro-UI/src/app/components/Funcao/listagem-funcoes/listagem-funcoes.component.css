@@ -2,28 +2,27 @@
   padding: 30px 30px 30px 30px;
 }
 
-.cabecalho{
+.cabecalho {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.titulo{
+.titulo {
   position: absolute;
   left: 5px;
 }
 
-.tabela
-{
-  width: 100%;;
+.tabela {
+  width: 100%;
   padding-top: 30px;
 }
 
-.divAutoComplete{
-padding-top: 30px;
-padding-bottom: 30px;
+.divAutoComplete {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.divAutoCompleteInput{
+.autoCompleteInput {
   width: 500px;
 }
 
@@ -31,16 +30,17 @@ padding-bottom: 30px;
   width: 500px;
 }
 
-.textErros{
-  font-weight: 900;
-  color: #c0392b;
+
+.textoErros {
+font-weight: 900;
+color: #c0392b;
 }
 
-.divErros{
-  padding: 20px;
+.divErros {
+padding: 20px;
 }
 
-.cardErros{
-  padding-top: 30px;
-  padding-bottom: 30px;
+.cardErros {
+padding-top: 30px;
+padding-bottom: 30px;
 }

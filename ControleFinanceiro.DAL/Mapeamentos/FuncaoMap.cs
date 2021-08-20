@@ -1,12 +1,13 @@
-﻿
-using ControleFinanceiro.BLL.Models;
+﻿using ControleFinanceiro.BLL.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace ControleFinanceiro.DAL.Mapeamentos
 {
-    class FuncaoMap : IEntityTypeConfiguration<Funcao>
+    public class FuncaoMap : IEntityTypeConfiguration<Funcao>
     {
         public void Configure(EntityTypeBuilder<Funcao> builder)
         {
@@ -19,15 +20,16 @@ namespace ControleFinanceiro.DAL.Mapeamentos
                     Id = Guid.NewGuid().ToString(),
                     Name = "Administrador",
                     NormalizedName = "ADMINISTRADOR",
-                    Descricao = "ADMINISTRADOR DO SISTEMA"
+                    Descricao = "Administrador do sistema"
                 },
+
 
                 new Funcao
                 {
                     Id = Guid.NewGuid().ToString(),
                     Name = "Usuario",
                     NormalizedName = "USUARIO",
-                    Descricao = "Usuário do Sistema"
+                    Descricao = "Usuário do sistema"
                 });
 
             builder.ToTable("Funcoes");
