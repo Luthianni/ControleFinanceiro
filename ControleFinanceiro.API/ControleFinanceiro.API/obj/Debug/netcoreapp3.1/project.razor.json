@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
+  "FilePath": "c:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14457,33 +14457,33 @@
   "RootNamespace": "ControleFinanceiro.API",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\Views\\Funcoes\\Delete.cshtml",
-      "TargetPath": "Views\\Funcoes\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\Views\\Funcoes\\Details.cshtml",
+      "FilePath": "c:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\Views\\Funcoes\\Details.cshtml",
       "TargetPath": "Views\\Funcoes\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\Views\\Funcoes\\Create.cshtml",
-      "TargetPath": "Views\\Funcoes\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\Views\\Funcoes\\Edit.cshtml",
+      "FilePath": "c:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\Views\\Funcoes\\Edit.cshtml",
       "TargetPath": "Views\\Funcoes\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\Views\\Funcoes\\Index.cshtml",
+      "FilePath": "c:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\Views\\Funcoes\\Delete.cshtml",
+      "TargetPath": "Views\\Funcoes\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\Views\\Funcoes\\Index.cshtml",
       "TargetPath": "Views\\Funcoes\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\Views\\Funcoes\\Create.cshtml",
+      "TargetPath": "Views\\Funcoes\\Create.cshtml",
       "FileKind": "mvc"
     }
   ],

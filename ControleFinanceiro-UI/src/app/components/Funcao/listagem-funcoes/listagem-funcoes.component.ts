@@ -17,7 +17,7 @@ import { Observable } from 'rxjs';
 export class ListagemFuncoesComponent implements OnInit {
   funcoes = new MatTableDataSource<any>();
   displayedColumns: string[];
-  autcompleteInput = new FormControl();
+  autocompleteInput = new FormControl();
   opcoesFuncoes: string[] = [];
   nomesFuncoes: Observable<string[]>;
 
@@ -30,7 +30,7 @@ export class ListagemFuncoesComponent implements OnInit {
   constructor(
     private funcoesService: FuncoesService,
     private dialog: MatDialog
-    ) {}
+  ) {}
 
   ngOnInit(): void {
     this.funcoesService.PegarTodos().subscribe((resultado) => {
@@ -45,7 +45,7 @@ export class ListagemFuncoesComponent implements OnInit {
 
     this.displayedColumns = this.ExibirColunas();
 
-    this.nomesFuncoes = this.autcompleteInput.valueChanges.pipe(
+    this.nomesFuncoes = this.autocompleteInput.valueChanges.pipe(
       startWith(''),
       map((nome) => this.FiltrarNomes(nome))
     );
@@ -58,10 +58,10 @@ export class ListagemFuncoesComponent implements OnInit {
   FiltrarNomes(nome: string): string[] {
     if (nome.trim().length >= 4) {
       this.funcoesService
-      .FiltrarFuncoes(nome.toLowerCase())
-      .subscribe((resultado) => {
-        this.funcoes.data = resultado;
-      });
+        .FiltrarFuncoes(nome.toLowerCase())
+        .subscribe((resultado) => {
+          this.funcoes.data = resultado;
+        });
     } else {
       if (nome === '') {
         this.funcoesService.PegarTodos().subscribe((resultado) => {
@@ -71,13 +71,13 @@ export class ListagemFuncoesComponent implements OnInit {
     }
 
     return this.opcoesFuncoes.filter((funcao) =>
-    funcao.toLowerCase().includes(nome.toLowerCase())
+      funcao.toLowerCase().includes(nome.toLowerCase())
     );
   }
 
   AbrirDialog(funcaoId, nome): void {
     this.dialog
-    .open(DialogExclusaoFuncoesComponent, {
+      .open(DialogExclusaoFuncoesComponent, {
         data: {
           funcaoId: funcaoId,
           nome: nome,
@@ -92,8 +92,7 @@ export class ListagemFuncoesComponent implements OnInit {
           });
           this.displayedColumns = this.ExibirColunas();
         }
-      })
-
+      });
   }
 }
 
@@ -108,15 +107,13 @@ export class DialogExclusaoFuncoesComponent {
     private snackBar: MatSnackBar
   ) {}
 
- Excluir
-Funcao
-(FuncaoId): void {
-  this.funcoesService.ExcluirFuncao(FuncaoId).subscribe((resultado) => {
-    this.snackBar.open(resultado.mensagem, null, {
-      duration: 2000,
-      horizontalPosition: 'right',
-      verticalPosition: 'top'
+  ExcluirFuncao(funcaoId): void {
+    this.funcoesService.ExcluirFuncao(funcaoId).subscribe((resultado) => {
+      this.snackBar.open(resultado.mensagem, null, {
+        duration: 2000,
+        horizontalPosition: 'right',
+        verticalPosition: 'top',
+      });
     });
-  });
-}
+  }
 }

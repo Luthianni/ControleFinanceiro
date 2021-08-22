@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj": {}
+    "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj": {
+    "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
+        "projectUniqueName": "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
         "projectName": "ControleFinanceiro.API",
-        "projectPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
-        "packagesPath": "C:\\Users\\luthianni.alves\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\obj\\",
+        "projectPath": "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
+        "packagesPath": "C:\\Users\\LuthianniAlves\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\luthianni.alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LuthianniAlves\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -32,11 +34,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj": {
-                "projectPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj"
+              "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj": {
+                "projectPath": "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj"
               },
-              "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj": {
-                "projectPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj"
+              "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj": {
+                "projectPath": "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj"
               }
             }
           }
@@ -53,7 +55,7 @@
           "dependencies": {
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[9.2.0, )"
+              "version": "[10.3.1, )"
             },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
@@ -132,22 +134,24 @@
         }
       }
     },
-    "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj": {
+    "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
         "projectName": "ControleFinanceiro.BLL",
-        "projectPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
-        "packagesPath": "C:\\Users\\luthianni.alves\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\obj\\",
+        "projectPath": "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
+        "packagesPath": "C:\\Users\\LuthianniAlves\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\luthianni.alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LuthianniAlves\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -172,6 +176,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.3.1, )"
+            },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -242,22 +250,24 @@
         }
       }
     },
-    "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj": {
+    "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
         "projectName": "ControleFinanceiro.DAL",
-        "projectPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
-        "packagesPath": "C:\\Users\\luthianni.alves\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\obj\\",
+        "projectPath": "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
+        "packagesPath": "C:\\Users\\LuthianniAlves\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\luthianni.alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LuthianniAlves\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -270,8 +280,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj": {
-                "projectPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj"
+              "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj": {
+                "projectPath": "C:\\Users\\LuthianniAlves\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj"
               }
             }
           }
@@ -286,6 +296,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.3.1, )"
+            },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
               "version": "[2.2.0, )"
