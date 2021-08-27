@@ -1,3 +1,4 @@
+using ControleFinanceiro.API.Extensions;
 using ControleFinanceiro.API.Validacoes;
 using ControleFinanceiro.API.ViewModels;
 using ControleFinanceiro.BLL.Models;
@@ -34,6 +35,8 @@ namespace ControleFinanceiro.API
             (Configuration.GetConnectionString("ConexaoBD")));
 
             services.AddIdentity<Usuario, Funcao>().AddEntityFrameworkStores<Contexto>();
+
+            services.ConfigurarSenhaUsuario();
 
             services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
             services.AddScoped<ITipoRepositorio, TipoRepositorio>();

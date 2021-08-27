@@ -13,13 +13,23 @@ namespace ControleFinanceiro.DAL.Repositorios
         private readonly Contexto _contexto;
         private readonly UserManager<Usuario> _gerenciadorUsuarios;
         private readonly SignInManager<Usuario> _gerenciadorLogin;
-        private string funcao;
-
         public UsuarioRepositorio(Contexto contexto, UserManager<Usuario> gerenciadorUsuarios, SignInManager<Usuario> gerenciadorLogin) : base(contexto)
         {
             _contexto = contexto;
             _gerenciadorUsuarios = gerenciadorUsuarios;
             _gerenciadorLogin = gerenciadorLogin;
+        }
+
+        public async Task AtualizarUsuario(Usuario usuario)
+        {
+            try
+            {
+                await _gerenciadorUsuarios.UpdateAsync(usuario);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         public async Task<IdentityResult> CriarUsuario(Usuario usuario, string senha)
         {
@@ -33,7 +43,7 @@ namespace ControleFinanceiro.DAL.Repositorios
             }
         }
 
-        public async Task IncluirUsuarioEmFuncao(Usuario usuario, string funcoes)
+        public async Task IncluirUsuarioEmFuncao(Usuario usuario, string funcao)
         {
             try
             {
@@ -57,6 +67,18 @@ namespace ControleFinanceiro.DAL.Repositorios
             }
         }
 
+        public async Task<IList<string>> PegarFuncoesUsuario(Usuario usuario)
+        {
+            try
+            {
+                return await _gerenciadorUsuarios.GetRolesAsync(usuario);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public async Task<int> PegarQuantidadeUsuariosRegistrados()
         {
             try
@@ -68,5 +90,18 @@ namespace ControleFinanceiro.DAL.Repositorios
                 throw ex;
             }
         }
+
+        public async Task<Usuario> PegarUsuarioPeloEmail( string email)
+        {
+            try
+            {
+                return await _gerenciadorUsuarios.FindByIdAsync(email);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }

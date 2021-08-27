@@ -21,7 +21,7 @@ namespace ControleFinanceiro.API.Validacoes
                 .NotNull().WithMessage("Preencha a descrição")
                 .NotEmpty().WithMessage("Preencha a descrição")
                 .MinimumLength(1).WithMessage("Use mais caracteres")
-                .MaximumLength(30).WithMessage("Use mais caracteres");
+                .MaximumLength(50).WithMessage("Use mais caracteres");
         }
     }
 }

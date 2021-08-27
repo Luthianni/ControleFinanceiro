@@ -1,0 +1,20 @@
+.divFormulario {
+  width: 900px;
+}
+
+.divFoto{
+  border-width: 1px;
+  border-color: #bdc3c7;
+  border-style: solid;
+  height: 300px;
+  width: 350px;
+}
+
+.registroFormulario{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.formulario{
+  padding-top: 50px;
+}

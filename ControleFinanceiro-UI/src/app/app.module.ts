@@ -37,6 +37,8 @@ import {
 } from './components/Funcao/listagem-funcoes/listagem-funcoes.component';
 import { NovaFuncaoComponent } from './components/Funcao/nova-funcao/nova-funcao.component';
 import { AtualizarFuncaoComponent } from './components/Funcao/atualizar-funcao/atualizar-funcao.component';
+import { RegistrarUsuarioComponent } from './components/Usuario/Registro/registrar-usuario/registrar-usuario.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ import { AtualizarFuncaoComponent } from './components/Funcao/atualizar-funcao/a
     NovaFuncaoComponent,
     AtualizarFuncaoComponent,
     DialogExclusaoFuncoesComponent,
-    
+    RegistrarUsuarioComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -73,6 +76,7 @@ import { AtualizarFuncaoComponent } from './components/Funcao/atualizar-funcao/a
     MatSortModule,
     MatProgressBarModule,
     MatSnackBarModule,
+    FlexLayoutModule,
 
   ],
   providers: [TiposService, HttpClientModule, CategoriasService, FuncoesService],

@@ -7,6 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ControleFinanceiro.BLL.Models;
 using ControleFinanceiro.DAL;
+using ControleFinanceiro.DAL.Interfaces;
+using Nancy.IO;
+using System.IO;
+using Microsoft.AspNetCore.Identity;
+using ControleFinanceiro.API.ViewModels;
 
 namespace ControleFinanceiro.API.Controllers
 {
@@ -14,70 +19,129 @@ namespace ControleFinanceiro.API.Controllers
     [ApiController]
     public class UsuariosController : ControllerBase
     {
-        private readonly Contexto _context;
+        private readonly IUsuarioRepositorio _usuarioRepositorio;
 
-        public UsuariosController(Contexto context)
+
+        public UsuariosController(IUsuarioRepositorio usuarioRepositorio)
         {
-            _context = context;
+            _usuarioRepositorio = usuarioRepositorio;
         }
 
-        
-        // GET: api/Usuarios/5
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> GetUsuario(string id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
+            var usuario = await _usuarioRepositorio.PegarPeloId(id);
 
             if (usuario == null)
             {
                 return NotFound();
             }
 
-            return usuario;
+            AtualizarUsuarioViewlModel model = new AtualizarUsuarioViewlModel
+            {
+                id = usuario.Id,
+                UserName = usuario.UserName,
+                Email = usuario.Email,
+                CPF = usuario.CPF,
+                Profissao = usuario.Profissao,
+                Foto = usuario.Foto
+            };
+
+            return model;
         }
 
-        // PUT: api/Usuarios/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutUsuario(string id, Usuario usuario)
+        [HttpPost("SalvarFoto")]
+
+        public async Task<ActionResult> SalvarFoto()
         {
-            if (id != usuario.Id)
-            {
-                return BadRequest();
-            }
+            var foto = Request.Form.Files[0];
+            byte[] b;
 
-            _context.Entry(usuario).State = EntityState.Modified;
-
-            try
+            using (var openReadStream = foto.OpenReadStream())
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!UsuarioExists(id))
+                using (var memoryStream = new MemoryStream())
                 {
-                    return NotFound();
+                    await openReadStream.CopyToAsync(memoryStream);
+                    b = memoryStream.ToArray();
+                }
+            }
+
+            return Ok(new
+            {
+                foto = b
+            });
+        }
+
+        [HttpPost("RegistrarUsuario")]
+        public async Task<ActionResult> RegistrarUsuario(RegistroViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                IdentityResult usuarioCriado;
+                string funcaoUsuario;
+
+                Usuario usuario = new Usuario
+                {
+                    UserName = model.NomeUsuario,
+                    Email = model.Email,
+                    PasswordHash = model.Senha,
+                    CPF = model.CPF,
+                    Profissao = model.Profissao,
+                    Foto = model.Foto
+
+                };
+
+                if (await _usuarioRepositorio.PegarQuantidadeUsuariosRegistrados() > 0)
+                {
+                    funcaoUsuario = "Usuario";
                 }
                 else
                 {
-                    throw;
+                    funcaoUsuario = "Administrador";
                 }
+
+                usuarioCriado = await _usuarioRepositorio.CriarUsuario(usuario, model.Senha);
+
+                if (usuarioCriado.Succeeded)
+                {
+                    await _usuarioRepositorio.IncluirUsuarioEmFuncao(usuario, funcaoUsuario);
+                    await _usuarioRepositorio.LogarUsuario(usuario, false);
+
+                    return Ok(new
+                    {
+                        emailUsuarioLogado = usuario.Email,
+                        usuarioId = usuario.Id
+                    });
+                }
+
+                else
+                {
+                    return BadRequest(model);
+                }
+
+                return BadRequest(model);
+
             }
 
-            return NoContent();
-        }
+            [HttpPost("LogarUsuario")]
 
-        // POST: api/Usuarios
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPost]
-        public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
-        {
-            _context.Usuarios.Add(usuario);
-            await _context.SaveChangesAsync();
+            public async Task<ActionResult> LogarUsuario(LoginViewModel model)
+            {
+                if (model == null)
+                    return NotFound("Usuario e / ou senhas inválidos");
+                Usuario usuario = await _usuarioRepositorio.PegaUsuarioPeloEmail(model.Email);
 
-            return CreatedAtAction("GetUsuario", new { id = usuario.Id }, usuario);
+                if (usuario != null)
+                {
+                    PasswordHasher<Usuario> passwordHasher = new PasswordHasher<Usuario>();
+                    if (passwordHasher.VerifyHashedPassword(usuario, usuario.PasswordHash, model.Senha) != PasswordVerificationResult.Failed)
+                    {
+                        var funcoesUsuario = await _usuarioRepositorio.PegarFuncoesUsuario(usuario);
+
+                    }
+                }
+            }
         }
 
     }
