@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using ControleFinanceiro.API.ViewModels;
 using ControleFinanceiro.BLL.Models;
 using ControleFinanceiro.DAL;
-using ControleFinanceiro.DAL.Interfaces;
 using Nancy.IO;
 using System.IO;
+using ControleFinanceiro.DAL.Interfaces;
 using Microsoft.AspNetCore.Identity;
-using ControleFinanceiro.API.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using System.Linq;
+using System.Threading.Tasks;
+using ControleFinanceiro.API.Services;
 
 namespace ControleFinanceiro.API.Controllers
 {
@@ -29,7 +26,7 @@ namespace ControleFinanceiro.API.Controllers
 
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> GetUsuario(string id)
+        public async Task<ActionResult<AtualizarUsuarioViewlModel>> GetUsuario(string id)
         {
             var usuario = await _usuarioRepositorio.PegarPeloId(id);
 
@@ -39,8 +36,9 @@ namespace ControleFinanceiro.API.Controllers
             }
 
             AtualizarUsuarioViewlModel model = new AtualizarUsuarioViewlModel
+
             {
-                id = usuario.Id,
+                Id = usuario.Id,
                 UserName = usuario.UserName,
                 Email = usuario.Email,
                 CPF = usuario.CPF,
@@ -106,6 +104,7 @@ namespace ControleFinanceiro.API.Controllers
                 if (usuarioCriado.Succeeded)
                 {
                     await _usuarioRepositorio.IncluirUsuarioEmFuncao(usuario, funcaoUsuario);
+                    var token = TokenService.GerarToken(usuario, funcaoUsuario);
                     await _usuarioRepositorio.LogarUsuario(usuario, false);
 
                     return Ok(new
@@ -120,29 +119,40 @@ namespace ControleFinanceiro.API.Controllers
                     return BadRequest(model);
                 }
 
-                return BadRequest(model);
-
             }
-
-            [HttpPost("LogarUsuario")]
-
-            public async Task<ActionResult> LogarUsuario(LoginViewModel model)
-            {
-                if (model == null)
-                    return NotFound("Usuario e / ou senhas inválidos");
-                Usuario usuario = await _usuarioRepositorio.PegaUsuarioPeloEmail(model.Email);
-
-                if (usuario != null)
-                {
-                    PasswordHasher<Usuario> passwordHasher = new PasswordHasher<Usuario>();
-                    if (passwordHasher.VerifyHashedPassword(usuario, usuario.PasswordHash, model.Senha) != PasswordVerificationResult.Failed)
-                    {
-                        var funcoesUsuario = await _usuarioRepositorio.PegarFuncoesUsuario(usuario);
-
-                    }
-                }
-            }
+            return BadRequest(model);
         }
+
+        [HttpPost("LogarUsuario")]
+        public async Task<ActionResult> LogarUsuario(LoginViewModel model)
+        {
+            if (model == null)
+                return NotFound("Usuário e / ou senhas inválidos");
+            Usuario usuario = await _usuarioRepositorio.PegarUsuarioPeloEmail(model.Email);
+
+            if (usuario != null)
+            {
+                PasswordHasher<Usuario> passwordHasher = new PasswordHasher<Usuario>();
+                if (passwordHasher.VerifyHashedPassword(usuario, usuario.PasswordHash, model.Senha) != PasswordVerificationResult.Failed)
+                {
+                    var funcoesUsuario = await _usuarioRepositorio.PegarFuncoesUsuario(usuario);
+                    var token = TokenService.GerarToken(usuario, funcoesUsuario.First());
+                    await _usuarioRepositorio.LogarUsuario(usuario, false);
+
+                    return Ok(new
+                    {
+                        emailUsuarioLogado = usuario.Email,
+                        usuarioId = usuario.Id,
+                        tokenUsuarioLogado = token
+                    });
+                }
+
+                return NotFound("Usuário e / ou senha inválidos");
+            }
+
+            return NotFound("Usuário e / ou senha inválidos");
+        }
+
 
     }
 }

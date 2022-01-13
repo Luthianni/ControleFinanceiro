@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj": {}
+    "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj": {
+    "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
+        "projectUniqueName": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
         "projectName": "ControleFinanceiro.API",
-        "projectPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
-        "packagesPath": "C:\\Users\\luthianni.alves\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\obj\\",
+        "projectPath": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
+        "packagesPath": "C:\\Users\\luthianni.alves.AJAXTI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\luthianni.alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luthianni.alves.AJAXTI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -32,11 +34,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj": {
-                "projectPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj"
+              "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj": {
+                "projectPath": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj"
               },
-              "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj": {
-                "projectPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj"
+              "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj": {
+                "projectPath": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj"
               }
             }
           }
@@ -132,26 +134,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj": {
+    "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
         "projectName": "ControleFinanceiro.BLL",
-        "projectPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
-        "packagesPath": "C:\\Users\\luthianni.alves\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\obj\\",
+        "projectPath": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
+        "packagesPath": "C:\\Users\\luthianni.alves.AJAXTI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\luthianni.alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luthianni.alves.AJAXTI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -246,26 +250,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj": {
+    "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
         "projectName": "ControleFinanceiro.DAL",
-        "projectPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
-        "packagesPath": "C:\\Users\\luthianni.alves\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\obj\\",
+        "projectPath": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
+        "packagesPath": "C:\\Users\\luthianni.alves.AJAXTI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\luthianni.alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luthianni.alves.AJAXTI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -278,8 +284,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj": {
-                "projectPath": "C:\\Users\\luthianni.alves\\source\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj"
+              "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj": {
+                "projectPath": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj"
               }
             }
           }
@@ -364,7 +370,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ControleFinanceiro.API",
+    "\\ControleFinanceiro.API\\ControleFinanceiro.API",
+    "\\ControleFinanceiro.API\\ControleFinanceiro.API\\Controllers",
+    "\\ControleFinanceiro.API\\ControleFinanceiro.API\\Extensions",
+    "\\ControleFinanceiro.API\\ControleFinanceiro.API\\Validacoes",
+    "\\ControleFinanceiro.API\\ControleFinanceiro.API\\ViewModels",
+    "\\ControleFinanceiro.BLL",
+    "\\ControleFinanceiro.DAL",
+    "\\ControleFinanceiro.DAL\\Repositorios"
+  ],
+  "SelectedNode": "\\ControleFinanceiro.API\\ControleFinanceiro.API\\Controllers\\UsuariosController.cs",
+  "PreviewInSolutionExplorer": false
+}

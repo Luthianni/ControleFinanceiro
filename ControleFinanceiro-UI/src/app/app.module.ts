@@ -39,6 +39,8 @@ import { NovaFuncaoComponent } from './components/Funcao/nova-funcao/nova-funcao
 import { AtualizarFuncaoComponent } from './components/Funcao/atualizar-funcao/atualizar-funcao.component';
 import { RegistrarUsuarioComponent } from './components/Usuario/Registro/registrar-usuario/registrar-usuario.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { LoginUsuarioComponent } from './components/Usuario/Login/login-usuario/login-usuario.component';
+
 
 @NgModule({
   declarations: [
@@ -52,7 +54,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AtualizarFuncaoComponent,
     DialogExclusaoFuncoesComponent,
     RegistrarUsuarioComponent,
-
+    LoginUsuarioComponent
   ],
   imports: [
     BrowserModule,

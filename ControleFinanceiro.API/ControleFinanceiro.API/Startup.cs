@@ -46,6 +46,8 @@ namespace ControleFinanceiro.API
             services.AddTransient<IValidator<Categoria>, CategoriaValidator>();
             services.AddTransient<IValidator<FuncoesViewModel>, FuncoesViewModelValidator>();
             services.AddTransient<IValidator<RegistroViewModel>, RegistroViewModelValidator>();
+            services.AddTransient<IValidator<LoginViewModel>, LoginViewModelValidator>();
+            services.AddTransient<IValidator<AtualizarUsuarioViewModel>, AtualizarUsuarioViewModelValidator>();
 
             services.AddCors();
 
@@ -99,10 +101,10 @@ namespace ControleFinanceiro.API
             app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = Path.Combine(Directory.GetCurrentDirectory(), "ControleFinanceiro-UI");
-               // if (env.IsDevelopment())
-                //{
-               //     spa.UseProxyToSpaDevelopmentServer($"http://localhost:4200/");
-               // }
+                if (env.IsDevelopment())
+                {
+                    spa.UseProxyToSpaDevelopmentServer($"http://localhost:4200/");
+                }
             });
         }
     }

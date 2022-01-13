@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { DadosLogin } from '../models/DadosLogin';
 import { DadosRegistro } from '../models/DadosRegistro';
 
 const httpOptions = {
@@ -23,8 +24,13 @@ export class UsuariosService {
     return this.http.post<any>(apiUrl, formData);
   }
 
-  RegistrarUsuarios(dadosRegistro: DadosRegistro): Observable<any>{
+  RegistrarUsuario(dadosRegistro: DadosRegistro): Observable<any>{
     const apiUrl = `${this.url}/RegistrarUsuario`;
     return this.http.post<DadosRegistro>(apiUrl, dadosRegistro)
+  }
+
+  LogarUsuario(dadoslogin: DadosLogin): Observable<any>{
+    const apiUrl = `${this.url}/LogarUsuario`;
+    return this.http.post<DadosRegistro>(apiUrl, dadoslogin);
   }
 }
