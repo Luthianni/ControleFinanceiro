@@ -110,7 +110,8 @@ namespace ControleFinanceiro.API.Controllers
                     return Ok(new
                     {
                         emailUsuarioLogado = usuario.Email,
-                        usuarioId = usuario.Id
+                        usuarioId = usuario.Id,
+                        tokenUsuarioLogado =token
                     });
                 }
 
