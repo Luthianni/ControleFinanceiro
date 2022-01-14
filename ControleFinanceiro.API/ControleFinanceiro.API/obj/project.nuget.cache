@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w6htwm//7zO4CN6QDvo+qaNUkwvzfNiRMGKWrFv8tteCQF0JM6OjoZBrCZ1TGXH3kDKKXsjffN/JJm0BE2zOyg==",
+  "dgSpecHash": "TmNJUhv+0KDikOUjQT9G8c/YdUf1f9gLgVFFbScOnj6dmXuugC0TPjAc4r7DCfVZ2P/dAvXOx48YKeRpmXY5fw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
+  "projectFilePath": "C:\\@projetos\\Cursos\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luthianni.alves.AJAXTI\\.nuget\\packages\\fluentvalidation\\10.3.1\\fluentvalidation.10.3.1.nupkg.sha512",
     "C:\\Users\\luthianni.alves.AJAXTI\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.1\\fluentvalidation.aspnetcore.10.3.1.nupkg.sha512",

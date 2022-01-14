@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y79QrH+pEgluYb7veh4PZni7y4Y0tI1+E9H7j59LiTN9y+fFbRFF17P50kIhj4Xl7dEwHJaIG1Ca+nxNhLQc+w==",
+  "dgSpecHash": "Y+zMSKAwhi9S4F9mtonkxkUHLkBi4SguSne5u+hDZkrc1pejQ9+PCro9Qnd8TejkgzMSEV/i338nrIjveDKt9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luthianni.alves.AJAXTI\\OneDrive - AJL INFORMATICA LTDA\\repos\\Luthianni\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
+  "projectFilePath": "C:\\@projetos\\Cursos\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luthianni.alves.AJAXTI\\.nuget\\packages\\fluentvalidation\\10.3.1\\fluentvalidation.10.3.1.nupkg.sha512",
     "C:\\Users\\luthianni.alves.AJAXTI\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.1\\fluentvalidation.aspnetcore.10.3.1.nupkg.sha512",
