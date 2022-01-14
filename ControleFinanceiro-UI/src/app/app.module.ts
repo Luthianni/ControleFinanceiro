@@ -42,6 +42,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginUsuarioComponent } from './components/Usuario/Login/login-usuario/login-usuario.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +55,8 @@ import { LoginUsuarioComponent } from './components/Usuario/Login/login-usuario/
     AtualizarFuncaoComponent,
     DialogExclusaoFuncoesComponent,
     RegistrarUsuarioComponent,
-    LoginUsuarioComponent
+    LoginUsuarioComponent,
+
   ],
   imports: [
     BrowserModule,
