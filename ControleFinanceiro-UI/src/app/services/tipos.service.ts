@@ -7,7 +7,7 @@ import { Tipo } from '../models/Tipo';
   providedIn: 'root',
 })
 export class TiposService {
-  url: string = 'https://localhost:44317/api/Tipos';
+  url: string = 'api/Tipos';
 
   constructor(private http: HttpClient) {}
 

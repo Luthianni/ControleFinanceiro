@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -40,8 +40,12 @@ import { AtualizarFuncaoComponent } from './components/Funcao/atualizar-funcao/a
 import { RegistrarUsuarioComponent } from './components/Usuario/Registro/registrar-usuario/registrar-usuario.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginUsuarioComponent } from './components/Usuario/Login/login-usuario/login-usuario.component';
+import { JwtModule } from '@auth0/angular-jwt'
+import { NgxMaskModule } from 'ngx-mask';
 
-
+export function PegarTokenUsuario() {
+  return localStorage.getItem('TokemUsuarioLogado');
+}
 
 @NgModule({
   declarations: [
@@ -81,8 +85,18 @@ import { LoginUsuarioComponent } from './components/Usuario/Login/login-usuario/
     MatProgressBarModule,
     MatSnackBarModule,
     FlexLayoutModule,
-
+    NgxMaskModule.forRoot(),
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: PegarTokenUsuario,
+        allowedDomains: ['localhost:5000'],
+        disallowedRoutes: [],
+      },
+    }),
   ],
+
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+
   providers: [TiposService, HttpClientModule, CategoriasService, FuncoesService],
   bootstrap: [AppComponent],
 })
