@@ -34,7 +34,7 @@
                 </button>
 
                 <div
-                  *ngIf="propriedade.foto.touched && propriedade.foto.invalid"
+                *ngIf="propriedade.foto.touched && propriedade.foto.invalid"
                 >
                   <sup>*</sup> Escolha sua foto
                 </div>
@@ -70,7 +70,7 @@
                   matInput
                   placeholder="Digite o seu nome de usuário"
                   required
-                  minlength="6"
+                  minlength="4"
                   maxlength="50"
                 />
                 <mat-error

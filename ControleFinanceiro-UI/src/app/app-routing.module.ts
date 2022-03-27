@@ -36,17 +36,17 @@ const routes: Routes = [
   },
 
   {
-    path: 'funcoes/atualizarfuncao',
+    path: 'funcoes/atualizarfuncao/:id',
     component: AtualizarFuncaoComponent,
   },
 
   {
-    path: 'usuario/registrarusuario',
+    path: 'usuarios/registrarusuario',
     component: RegistrarUsuarioComponent,
   },
 
   {
-    path: 'usuario/loginusuario',
+    path: 'usuarios/loginusuario',
     component: LoginUsuarioComponent,
   },
 ];

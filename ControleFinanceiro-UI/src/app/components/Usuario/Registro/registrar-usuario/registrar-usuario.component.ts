@@ -25,7 +25,7 @@ export class RegistrarUsuarioComponent implements OnInit {
     this.formulario = new FormGroup({
       nomeusuario: new FormControl(null, [
         Validators.required,
-        Validators.minLength(6),
+        Validators.minLength(4),
         Validators.maxLength(50),
       ]),
       cpf: new FormControl(null, [
@@ -68,15 +68,15 @@ export class RegistrarUsuarioComponent implements OnInit {
   }
 
   EnviarFormulario(): void {
-    this.erros =  [];
-    const usuario = this.formulario.valeu;
+    this.erros = [];
+    const usuario = this.formulario.value;
     const formData: FormData = new FormData();
 
     if (this.foto != null) {
       formData.append('file', this.foto, this.foto.name);
     }
 
-    this.usuariosService.SalvarFoto(FormData).subscribe((resultado) => {
+    this.usuariosService.SalvarFoto(formData).subscribe((resultado) => {
       const dadosRegistro: DadosRegistro = new DadosRegistro();
       dadosRegistro.nomeusuario = usuario.nomeusuario;
       dadosRegistro.cpf = usuario.cpf;
@@ -91,14 +91,14 @@ export class RegistrarUsuarioComponent implements OnInit {
           const usuarioId = dados.usuarioId;
           const tokenUsuarioLogado = dados.tokenUsuarioLogado;
           localStorage.setItem('EmailUsuarioLogado', emailUsuarioLogado);
-          localStorage.setItem('UsarioId', usuarioId);
+          localStorage.setItem('UsuarioId', usuarioId);
           localStorage.setItem('TokenUsuarioLogado', tokenUsuarioLogado);
           this.router.navigate(['/dashboard/index']);
         },
         (err) => {
           if (err.status === 400) {
-            for (const campo in err.console.error.errors) {
-              if (err.error.errors.hasOwnProperty(campo)){
+            for (const campo in err.error.errors) {
+              if (err.error.errors.hasOwnProperty(campo)) {
                 this.erros.push(err.error.errors[campo]);
               }
             }

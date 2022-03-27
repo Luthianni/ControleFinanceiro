@@ -18,15 +18,13 @@ namespace ControleFinanceiro.API.Controllers
     {
         private readonly IUsuarioRepositorio _usuarioRepositorio;
 
-
         public UsuariosController(IUsuarioRepositorio usuarioRepositorio)
         {
             _usuarioRepositorio = usuarioRepositorio;
         }
 
-
         [HttpGet("{id}")]
-        public async Task<ActionResult<AtualizarUsuarioViewlModel>> GetUsuario(string id)
+        public async Task<ActionResult<AtualizarUsuarioViewModel>> GetUsuario(string id)
         {
             var usuario = await _usuarioRepositorio.PegarPeloId(id);
 
@@ -35,8 +33,7 @@ namespace ControleFinanceiro.API.Controllers
                 return NotFound();
             }
 
-            AtualizarUsuarioViewlModel model = new AtualizarUsuarioViewlModel
-
+            AtualizarUsuarioViewModel model = new AtualizarUsuarioViewModel
             {
                 Id = usuario.Id,
                 UserName = usuario.UserName,
@@ -50,7 +47,6 @@ namespace ControleFinanceiro.API.Controllers
         }
 
         [HttpPost("SalvarFoto")]
-
         public async Task<ActionResult> SalvarFoto()
         {
             var foto = Request.Form.Files[0];
@@ -87,7 +83,6 @@ namespace ControleFinanceiro.API.Controllers
                     CPF = model.CPF,
                     Profissao = model.Profissao,
                     Foto = model.Foto
-
                 };
 
                 if (await _usuarioRepositorio.PegarQuantidadeUsuariosRegistrados() > 0)
@@ -111,7 +106,7 @@ namespace ControleFinanceiro.API.Controllers
                     {
                         emailUsuarioLogado = usuario.Email,
                         usuarioId = usuario.Id,
-                        tokenUsuarioLogado =token
+                        tokenUsuarioLogado = token
                     });
                 }
 
@@ -119,9 +114,10 @@ namespace ControleFinanceiro.API.Controllers
                 {
                     return BadRequest(model);
                 }
-
             }
+
             return BadRequest(model);
+
         }
 
         [HttpPost("LogarUsuario")]
@@ -129,6 +125,7 @@ namespace ControleFinanceiro.API.Controllers
         {
             if (model == null)
                 return NotFound("Usuário e / ou senhas inválidos");
+
             Usuario usuario = await _usuarioRepositorio.PegarUsuarioPeloEmail(model.Email);
 
             if (usuario != null)

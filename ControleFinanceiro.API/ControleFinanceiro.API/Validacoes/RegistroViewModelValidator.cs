@@ -10,7 +10,7 @@ namespace ControleFinanceiro.API.Validacoes
             RuleFor(r => r.NomeUsuario)
                 .NotNull().WithMessage("Preencha o nome de usuario")
                 .NotEmpty().WithMessage("Preencha o nome de usuario")
-                .MinimumLength(6).WithMessage("Use mais caracteres")
+                .MinimumLength(4).WithMessage("Use mais caracteres")
                 .MaximumLength(50).WithMessage("Use menos caracteres");
 
             RuleFor(r => r.CPF)
@@ -29,6 +29,7 @@ namespace ControleFinanceiro.API.Validacoes
                 .NotNull().WithMessage("Escolha a foto")
                 .NotEmpty().WithMessage("Escolha a foto");
 
+
             RuleFor(r => r.Email)
                 .NotNull().WithMessage("Preencha o Email")
                 .NotEmpty().WithMessage("Preencha o Email")
@@ -41,7 +42,7 @@ namespace ControleFinanceiro.API.Validacoes
                 .NotEmpty().WithMessage("Preencha a Senha")
                 .MinimumLength(6).WithMessage("Use mais caracteres")
                 .MaximumLength(50).WithMessage("Use menos caracteres");
-                
+
         }
     }
 }

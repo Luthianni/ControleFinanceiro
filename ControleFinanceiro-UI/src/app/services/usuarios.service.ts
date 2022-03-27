@@ -16,21 +16,22 @@ const httpOptions = {
 export class UsuariosService {
 
   url = 'api/Usuarios';
+  
   constructor(private http: HttpClient) { }
 
-  SalvarFoto(formData: any): Observable<any>
-  {
+  SalvarFoto(formData: any): Observable<any> {
     const apiUrl = `${this.url}/SalvarFoto`;
     return this.http.post<any>(apiUrl, formData);
   }
 
-  RegistrarUsuario(dadosRegistro: DadosRegistro): Observable<any>{
+  
+  RegistrarUsuario(dadosRegistro: DadosRegistro): Observable<any> {
     const apiUrl = `${this.url}/RegistrarUsuario`;
-    return this.http.post<DadosRegistro>(apiUrl, dadosRegistro)
+    return this.http.post<DadosRegistro>(apiUrl, dadosRegistro, httpOptions);
   }
 
-  LogarUsuario(dadoslogin: DadosLogin): Observable<any>{
+  LogarUsuario(dadosLogin: DadosLogin): Observable<any> {
     const apiUrl = `${this.url}/LogarUsuario`;
-    return this.http.post<DadosRegistro>(apiUrl, dadoslogin);
+    return this.http.post<DadosRegistro>(apiUrl, dadosLogin, httpOptions);
   }
 }

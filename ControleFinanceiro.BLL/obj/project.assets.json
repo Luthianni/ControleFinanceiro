@@ -9617,25 +9617,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luthianni.alves.AJAXTI\\.nuget\\packages\\": {},
+    "C:\\Users\\LuthianniAlves\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\@projetos\\Cursos\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
+      "projectUniqueName": "C:\\@projetos\\cursos\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
       "projectName": "ControleFinanceiro.BLL",
-      "projectPath": "C:\\@projetos\\Cursos\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
-      "packagesPath": "C:\\Users\\luthianni.alves.AJAXTI\\.nuget\\packages\\",
-      "outputPath": "C:\\@projetos\\Cursos\\ControleFinanceiro\\ControleFinanceiro.BLL\\obj\\",
+      "projectPath": "C:\\@projetos\\cursos\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
+      "packagesPath": "C:\\Users\\LuthianniAlves\\.nuget\\packages\\",
+      "outputPath": "C:\\@projetos\\cursos\\ControleFinanceiro\\ControleFinanceiro.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\luthianni.alves.AJAXTI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LuthianniAlves\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -9733,7 +9733,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

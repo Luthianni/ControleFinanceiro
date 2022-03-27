@@ -95,7 +95,7 @@ namespace ControleFinanceiro.DAL.Repositorios
         {
             try
             {
-                return await _gerenciadorUsuarios.FindByIdAsync(email);
+                return await _gerenciadorUsuarios.FindByEmailAsync(email);
             }
             catch (Exception ex)
             {
