@@ -20,6 +20,7 @@ using System.IO;
 using System.Text;
 
 
+
 namespace ControleFinanceiro.API
 {
     public class Startup
@@ -42,11 +43,13 @@ namespace ControleFinanceiro.API
 
             services.ConfigurarSenhaUsuario();
 
+            services.AddScoped<ICartaoRepositorio, CartaoRepositorio>();
             services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
             services.AddScoped<ITipoRepositorio, TipoRepositorio>();
             services.AddScoped<IFuncaoRepositorio, FuncaoRepositorio>();
             services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 
+            services.AddTransient<IValidator<Cartao>, CartaoValidator>();
             services.AddTransient<IValidator<Categoria>, CategoriaValidator>();
             services.AddTransient<IValidator<FuncoesViewModel>, FuncoesViewModelValidator>();
             services.AddTransient<IValidator<RegistroViewModel>, RegistroViewModelValidator>();
@@ -71,7 +74,7 @@ namespace ControleFinanceiro.API
                 {
                     opcoes.RequireHttpsMetadata = false;
                     opcoes.SaveToken = true;
-                    opcoes.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                    opcoes.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuerSigningKey = true,
                         IssuerSigningKey = new SymmetricSecurityKey(key),

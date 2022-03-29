@@ -9,11 +9,13 @@ using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
 using ControleFinanceiro.API.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ControleFinanceiro.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Authorize(Roles= "Administrador")]
     public class UsuariosController : ControllerBase
     {
         private readonly IUsuarioRepositorio _usuarioRepositorio;
