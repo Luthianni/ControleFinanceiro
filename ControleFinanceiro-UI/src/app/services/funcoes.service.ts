@@ -14,35 +14,35 @@ const httpOptions = {
   providedIn: 'root',
 })
 export class FuncoesService {
-url = 'api/Funcoes';
+  url = 'api/Funcoes';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
-  PegarTodos(): Observable<Funcao[]>{
-    return this.http.get<Funcao[]>(this.url);
+  PegarTodos(): Observable<Funcao[]> {
+    return this.http.get<Funcao[]>(this.url, httpOptions);
   }
 
-  PegarPeloId(funcaoId: string): Observable<Funcao>{
+  PegarPeloId(funcaoId: string): Observable<Funcao> {
     const apiUrl = `${this.url}/${funcaoId}`;
     return this.http.get<Funcao>(apiUrl);
   }
 
-  NovaFuncao(funcao: Funcao): Observable<any>{
+  NovaFuncao(funcao: Funcao): Observable<any> {
     console.log(funcao);
     return this.http.post<Funcao>(this.url, funcao, httpOptions);
   }
 
-  AtualizarFuncao(funcaoId: string, funcao: Funcao): Observable<any>{
+  AtualizarFuncao(funcaoId: string, funcao: Funcao): Observable<any> {
     const apiUrl = `${this.url}/${funcaoId}`;
     return this.http.put<Funcao>(apiUrl, funcao, httpOptions);
   }
 
-  ExcluirFuncao(funcaoId: string): Observable<any>{
+  ExcluirFuncao(funcaoId: string): Observable<any> {
     const apiUrl = `${this.url}/${funcaoId}`;
     return this.http.delete<string>(apiUrl, httpOptions);
   }
 
-  FiltrarFuncoes(nomeFuncao: string): Observable<Funcao[]>{
+  FiltrarFuncoes(nomeFuncao: string): Observable<Funcao[]> {
     const apiUrl = `${this.url}/FiltrarFuncoes/${nomeFuncao}`;
     return this.http.get<Funcao[]>(apiUrl);
   }

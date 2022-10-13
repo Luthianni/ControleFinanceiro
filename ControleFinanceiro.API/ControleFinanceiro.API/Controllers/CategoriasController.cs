@@ -24,7 +24,7 @@ namespace ControleFinanceiro.API.Controllers
         }
 
         // GET: api/Categorias
-        [Authorize (Roles= "Administrador")]
+        //[Authorize (Roles = "Administrador")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Categoria>>> GetCategorias()
         {
@@ -32,7 +32,7 @@ namespace ControleFinanceiro.API.Controllers
         }
 
         // GET: api/Categorias/5
-        [Authorize(Roles = "Administrador")]
+        //[Authorize(Roles = "Administrador")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Categoria>> GetCategoria(int id)
         {
@@ -46,7 +46,7 @@ namespace ControleFinanceiro.API.Controllers
             return categoria;
         }
 
-        [Authorize(Roles = "Administrador")]
+        //[Authorize(Roles = "Administrador")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCategoria(int id, Categoria categoria)
         {
@@ -68,7 +68,7 @@ namespace ControleFinanceiro.API.Controllers
             return BadRequest(ModelState);
         }
 
-        [Authorize(Roles = "Administrador")]
+        //[Authorize(Roles = "Administrador")]
         [HttpPost]
         public async Task<ActionResult<Categoria>> PostCategoria(Categoria categoria)
         {
@@ -87,7 +87,7 @@ namespace ControleFinanceiro.API.Controllers
                 return BadRequest(categoria);
         }
 
-        [Authorize(Roles = "Administrador")]
+        //[Authorize(Roles = "Administrador")]
         [HttpDelete("{id}")]
         public async Task<ActionResult<Categoria>> DeleteCategoria(int id)
         {
@@ -106,7 +106,7 @@ namespace ControleFinanceiro.API.Controllers
 
         }
 
-        [Authorize(Roles = "Administrador")]
+        //[Authorize(Roles = "Administrador")]
         [HttpGet("FiltrarCategorias/{nomeCategoria}")]
 
         public async Task<ActionResult<IEnumerable<Categoria>>> FiltrarCategoria(string nomeCategoria)

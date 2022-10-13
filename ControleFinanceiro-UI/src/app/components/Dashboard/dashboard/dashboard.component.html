@@ -3,9 +3,11 @@
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened>
     <mat-list style="cursor: pointer">
+
       <mat-list-item routerLink="/cartoes/listagemcartoes">
         <mat-icon>credit_card</mat-icon> Cartões
       </mat-list-item>
+      <mat-divider></mat-divider>
 
       <div *ngIf="isAdministrador">
         <mat-list-item routerLink="/categorias/listagemcategorias">

@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Categoria } from 'src/app/models/Categoria';
 import { Tipo } from 'src/app/models/Tipo';
 import { CategoriasService } from 'src/app/services/categorias.service';
 import { TiposService } from 'src/app/services/tipos.service';
-import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-atualizar-categoria',
@@ -31,7 +31,7 @@ export class AtualizarCategoriaComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.erros
+    this.erros = [];
     this.categoriaId = this.route.snapshot.params.id;
     this.tiposService.PegarTodos().subscribe((resultado) => {
       this.tipos = resultado;

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { DadosRegistro } from 'src/app/models/DadosRegistro';
 import { UsuariosService } from 'src/app/services/usuarios.service';
@@ -93,7 +93,7 @@ export class RegistrarUsuarioComponent implements OnInit {
           localStorage.setItem('EmailUsuarioLogado', emailUsuarioLogado);
           localStorage.setItem('UsuarioId', usuarioId);
           localStorage.setItem('TokenUsuarioLogado', tokenUsuarioLogado);
-          this.router.navigate(['/dashboard/index']);
+          this.router.navigate(['cartoes/listagemcartoes']);
         },
         (err) => {
           if (err.status === 400) {

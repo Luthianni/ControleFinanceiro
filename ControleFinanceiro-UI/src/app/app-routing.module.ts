@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+import { AtualizarCartaoComponent } from './components/Cartao/atualizar-cartao/atualizar-cartao.component';
 import { ListagemCartoesComponent } from './components/Cartao/listagem-cartoes/listagem-cartoes.component';
 import { NovoCartaoComponent } from './components/Cartao/novo-cartao/novo-cartao.component';
 import { AtualizarCategoriaComponent } from './components/Categoria/atualizar-categoria/atualizar-categoria.component';
@@ -50,14 +52,20 @@ const routes: Routes = [
       },
 
       {
+        path: 'cartoes/listagemcartoes',
+        component: ListagemCartoesComponent,
+      },
+
+      {
         path: 'cartoes/novocartao',
         component: NovoCartaoComponent,
       },
 
       {
-        path: 'cartoes/listagemcartoes',
-        component: ListagemCartoesComponent,
+        path: 'cartoes/atualizarcartao/:id',
+        component: AtualizarCartaoComponent,
       },
+
     ],
   },
 
@@ -76,4 +84,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

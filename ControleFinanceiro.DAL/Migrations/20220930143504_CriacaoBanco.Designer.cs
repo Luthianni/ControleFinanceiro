@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ControleFinanceiro.DAL.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20220314044431_CriacaoBancoDados")]
-    partial class CriacaoBancoDados
+    [Migration("20220930143504_CriacaoBanco")]
+    partial class CriacaoBanco
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -209,16 +209,16 @@ namespace ControleFinanceiro.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "41397647-46de-4dc1-a8d8-16e813af96f8",
-                            ConcurrencyStamp = "06b06baf-6252-49aa-9618-8285bf3ee236",
+                            Id = "cc40d40a-549a-4e57-8b62-36087fddacd5",
+                            ConcurrencyStamp = "cf79aabd-3ca2-4041-be2e-aaac8af26137",
                             Descricao = "Administrador do sistema",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "2f152a0e-2923-4cbe-b997-db06d0b59a10",
-                            ConcurrencyStamp = "dd140fa3-e879-4691-8c8b-a1d98be20053",
+                            Id = "673f4417-c4d8-4241-9ca2-0898eec17032",
+                            ConcurrencyStamp = "6d6283cc-2ea3-4317-b0a0-768bdb128652",
                             Descricao = "Usuário do sistema",
                             Name = "Usuario",
                             NormalizedName = "USUARIO"

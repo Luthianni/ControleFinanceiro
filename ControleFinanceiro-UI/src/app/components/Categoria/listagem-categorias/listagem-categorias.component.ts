@@ -1,13 +1,13 @@
-import { startWith, map } from 'rxjs/operators';
-import { Observable } from 'rxjs';
+import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { CategoriasService } from './../../../services/categorias.service';
-import { Component, OnInit, Inject, ViewChild } from '@angular/core';
-import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatSort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
+import { Observable } from 'rxjs';
+import { map, startWith } from 'rxjs/operators';
+import { CategoriasService } from './../../../services/categorias.service';
 
 @Component({
   selector: 'app-listagem-categorias',

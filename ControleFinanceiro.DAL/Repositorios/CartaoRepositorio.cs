@@ -24,9 +24,9 @@ namespace ControleFinanceiro.DAL.Repositorios
             }
             catch (Exception ex)
             {
+
                 throw ex;
             }
-
         }
     }
 }

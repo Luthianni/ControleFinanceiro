@@ -1,10 +1,10 @@
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
+import { Tipo } from './../../../models/Tipo';
 import { CategoriasService } from './../../../services/categorias.service';
 import { TiposService } from './../../../services/tipos.service';
-import { Tipo } from './../../../models/Tipo';
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
-import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-nova-categoria',

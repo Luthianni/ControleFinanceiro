@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace ControleFinanceiro.API.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CartoesController : ControllerBase
@@ -23,8 +23,7 @@ namespace ControleFinanceiro.API.Controllers
             _cartaoRepositorio = cartaoRepositorio;
         }
 
-        [HttpGet("PegarCartoesPeloUsuarioId/(usuarioId")]
-
+        [HttpGet("PegarCartoesPeloUsuarioId/{usuarioId}")]
         public async Task<IEnumerable<Cartao>> PegarCartoesPeloUsuarioId(string usuarioId)
         {
             return await _cartaoRepositorio.PegarCartoesPeloUsuarioId(usuarioId).ToListAsync();
@@ -37,25 +36,28 @@ namespace ControleFinanceiro.API.Controllers
 
             if (cartao == null)
                 return NotFound();
+
             return cartao;
         }
 
         [HttpPut("{id}")]
         public async Task<ActionResult> PutCartao(int id, Cartao cartao)
         {
-            if(id != cartao.CartaoId)
+            if (id != cartao.CartaoId)
             {
-                return BadRequest("Cartões diferentes. Não foi possivel atualizar");
+                return BadRequest("Cartões diferentes. Não foi possível atualizar");
             }
+
             if (ModelState.IsValid)
             {
                 await _cartaoRepositorio.Atualizar(cartao);
+
                 return Ok(new
                 {
                     mensagem = $"Cartão número {cartao.Numero} atualizado com sucesso"
                 });
-
             }
+
             return BadRequest(cartao);
         }
 
@@ -66,11 +68,13 @@ namespace ControleFinanceiro.API.Controllers
             {
                 await _cartaoRepositorio.Inserir(cartao);
 
+
                 return Ok(new
                 {
                     mensagem = $"Cartão número {cartao.Numero} criado com sucesso"
                 });
             }
+
             return BadRequest(cartao);
         }
 

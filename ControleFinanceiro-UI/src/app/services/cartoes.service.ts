@@ -16,14 +16,14 @@ const httpOptions = {
 export class CartoesService {
   url = 'api/Cartoes';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
-  PegarCartaoPeloId(cartaoId: number): Observable<Cartao>{
+  PegarCartaoPeloId(cartaoId: number): Observable<Cartao> {
     const apiUrl = `${this.url}/${cartaoId}`;
     return this.http.get<Cartao>(apiUrl);
   }
 
-  PegarCartoesPeloUsuarioId(usuarioId: string): Observable<Cartao[]>{
+  PegarCartoesPeloUsuarioId(usuarioId: string): Observable<Cartao[]> {
     const apiUrl = `${this.url}/PegarCartoesPeloUsuarioId/${usuarioId}`;
     return this.http.get<Cartao[]>(apiUrl);
   }
@@ -42,7 +42,7 @@ export class CartoesService {
     return this.http.delete<number>(apiUrl, httpOptions);
   }
 
-  FiltrarCartoes(numeroCartao: string): Observable<Cartao[]>{
+  FiltrarCartoes(numeroCartao: string): Observable<Cartao[]> {
     const apiUrl = `${this.url}/FiltrarCartoes/${numeroCartao}`;
     return this.http.get<Cartao[]>(apiUrl);
   }

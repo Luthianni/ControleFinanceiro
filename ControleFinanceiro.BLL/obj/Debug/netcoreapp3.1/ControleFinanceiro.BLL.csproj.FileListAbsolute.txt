@@ -87,3 +87,16 @@ C:\@projetos\Cursos\ControleFinanceiro\ControleFinanceiro.BLL\obj\Debug\netcorea
 C:\@projetos\Cursos\ControleFinanceiro\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.dll
 C:\@projetos\Cursos\ControleFinanceiro\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.pdb
 C:\@projetos\Cursos\ControleFinanceiro\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.genruntimeconfig.cache
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\bin\Debug\netcoreapp3.1\ControleFinanceiro.BLL.deps.json
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\bin\Debug\netcoreapp3.1\ControleFinanceiro.BLL.runtimeconfig.json
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\bin\Debug\netcoreapp3.1\ControleFinanceiro.BLL.runtimeconfig.dev.json
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\bin\Debug\netcoreapp3.1\ControleFinanceiro.BLL.dll
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\bin\Debug\netcoreapp3.1\ControleFinanceiro.BLL.pdb
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.csproj.AssemblyReference.cache
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.AssemblyInfoInputs.cache
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.AssemblyInfo.cs
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.csproj.CoreCompileInputs.cache
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.dll
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.pdb
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.genruntimeconfig.cache

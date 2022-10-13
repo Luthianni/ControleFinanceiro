@@ -1,13 +1,13 @@
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
-import { startWith, map } from 'rxjs/operators';
+import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { FuncoesService } from './../../../services/funcoes.service';
-import { MatSort } from '@angular/material/sort';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { Component, OnInit, ViewChild, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
+import { map, startWith } from 'rxjs/operators';
+import { FuncoesService } from './../../../services/funcoes.service';
 
 @Component({
   selector: 'app-listagem-funcoes',

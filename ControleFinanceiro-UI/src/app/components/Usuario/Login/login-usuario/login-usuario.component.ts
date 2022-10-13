@@ -15,7 +15,7 @@ export class LoginUsuarioComponent implements OnInit {
   constructor(
     private usuarioService: UsuariosService,
     private router: Router
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.erros = [];
@@ -51,7 +51,7 @@ export class LoginUsuarioComponent implements OnInit {
         localStorage.setItem('EmailUsuarioLogado', emailUsuarioLogado);
         localStorage.setItem('UsuarioId', usuarioId);
         localStorage.setItem('TokenUsuarioLogado', tokenUsuarioLogado);
-        this.router.navigate(['cartoes/listagemcartao']);
+        this.router.navigate(['cartoes/listagemcartoes']);
       },
       (err) => {
         if (err.status === 400) {
