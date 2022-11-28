@@ -6,11 +6,15 @@
   <mat-card>
     <mat-card-header>
       <mat-card-title>
-        <h3>Atualização do cartão {{ numeroCartao }}</h3>
+        <h3>Atualização do cartão {{ numeroCartao }} </h3>
       </mat-card-title>
     </mat-card-header>
 
-    <form [formGroup]="formulario">
+    <form
+     [formGroup]="formulario"
+     (ngSubmit)="EnviarFormulario()"
+     >
+
       <div class="cardErros" *ngIf="erros.length > 0">
         <mat-card>
           <mat-card-header>
@@ -18,6 +22,7 @@
           </mat-card-header>
 
           <mat-divider></mat-divider>
+
           <mat-card-content>
             <div class="divErros">
               <h4 *ngFor="let erro of erros" class="textoErros">
@@ -26,6 +31,7 @@
             </div>
           </mat-card-content>
         </mat-card>
+      </div>
 
         <mat-card-content>
           <div>
@@ -46,11 +52,20 @@
                 <sup>*</sup> Digite o nome do cartão
               </mat-error>
 
-              <mat-error *ngIf="propriedade.nome.erros?.minlength">
+              <mat-error *ngIf="
+                propriedade.nome.erros?.minlength && propriedade.nome.invalid
+                "
+                >
+
                 <sup>*</sup> Use mais caracteres
               </mat-error>
 
-              <mat-error *ngIf="propriedade.nome.erros?.maxlength">
+              <mat-error
+               *ngIf="
+                propriedade.nome.erros?.maxlength && propriedade.nome.invalid
+                "
+                >
+
                 <sup>*</sup> Use menos caracteres
               </mat-error>
             </mat-form-field>
@@ -76,12 +91,13 @@
                 <sup>*</sup> Digite a bandeira do cartão
               </mat-error>
 
-              <mat-error *ngIf="propriedade.bandeira.erros?.minlength">
+              <mat-error
+                 *ngIf="
+                  propriedade.bandeira.erros?.minlength &&
+                  propriedade.bandeira.invalid
+                "
+              >
                 <sup>*</sup> Use mais caracteres
-              </mat-error>
-
-              <mat-error *ngIf="propriedade.bandeira.erros?.maxlength">
-                <sup>*</sup> Use menos caracteres
               </mat-error>
             </mat-form-field>
           </div>
@@ -93,23 +109,32 @@
                 type="text"
                 formControlName="numero"
                 matInput
-                placeholder="Digite o numero do cartão"
+                placeholder="Digite o número do cartão"
                 required
                 minlength="1"
                 maxlength="20"
                 mask="0000 0000 0000 0000"
               />
               <mat-error
-                *ngIf="propriedade.numero.touched && propriedade.numero.invalid"
+                *ngIf="
+                propriedade.numero.touched && propriedade.numero.invalid"
               >
                 <sup>*</sup> Digite o numero do cartão
               </mat-error>
 
-              <mat-error *ngIf="propriedade.numero.erros?.minlength">
+              <mat-error
+              *ngIf="
+              propriedade.numero.erros?.minlength &&
+              propriedade.numero.invalid">
+
                 <sup>*</sup> Use mais caracteres
               </mat-error>
 
-              <mat-error *ngIf="propriedade.numero.erros?.maxlength">
+              <mat-error
+               *ngIf="
+               propriedade.numero.erros?.maxlength &&
+               propriedade.numero.invalid">
+
                 <sup>*</sup> Use menos caracteres
               </mat-error>
             </mat-form-field>
@@ -130,6 +155,24 @@
               >
                 <sup>*</sup> Digite o limite do cartão
               </mat-error>
+
+              <mat-error
+              *ngIf="
+                propriedade.limite.errors?.minlength &&
+                propriedade.limite.invalid
+              "
+            >
+              <sup>*</sup> Use mais caracteres
+            </mat-error>
+
+            <mat-error
+              *ngIf="
+                propriedade.limite.errors?.maxlength &&
+                propriedade.limite.invalid
+              "
+            >
+              <sup>*</sup> Use menos caracteres
+            </mat-error>
             </mat-form-field>
           </div>
         </mat-card-content>
@@ -151,7 +194,6 @@
             </button>
           </div>
         </mat-card-actions>
-      </div>
     </form>
   </mat-card>
 </div>

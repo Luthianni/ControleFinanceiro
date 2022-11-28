@@ -1,16 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\ControleFinanceiro-UI\\src",
+    "\\ControleFinanceiro-UI\\src\\app",
+    "\\ControleFinanceiro-UI\\src\\app\\components",
+    "\\ControleFinanceiro-UI\\src\\app\\components\\Cartao",
+    "\\ControleFinanceiro-UI\\src\\app\\components\\Cartao\\atualizar-cartao",
     "\\ControleFinanceiro.API",
-    "\\ControleFinanceiro.API\\ControleFinanceiro.API",
-    "\\ControleFinanceiro.API\\ControleFinanceiro.API\\Controllers",
-    "\\ControleFinanceiro.API\\ControleFinanceiro.API\\Extensions",
-    "\\ControleFinanceiro.API\\ControleFinanceiro.API\\Validacoes",
-    "\\ControleFinanceiro.API\\ControleFinanceiro.API\\ViewModels",
-    "\\ControleFinanceiro.BLL",
-    "\\ControleFinanceiro.DAL",
-    "\\ControleFinanceiro.DAL\\Repositorios"
+    "\\ControleFinanceiro.API\\ControleFinanceiro.API\\bin",
+    "\\ControleFinanceiro.API\\ControleFinanceiro.API\\bin\\Debug"
   ],
-  "SelectedNode": "\\ControleFinanceiro.API\\ControleFinanceiro.API\\Controllers\\UsuariosController.cs",
+  "SelectedNode": "\\ControleFinanceiro.API\\ControleFinanceiro.API.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -1203,3 +1203,8 @@ C:\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro.API\obj
 C:\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\ControleFinanceiro.API.dll
 C:\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\ControleFinanceiro.API.pdb
 C:\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\ControleFinanceiro.API.genruntimeconfig.cache
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\staticwebassets\ControleFinanceiro.API.StaticWebAssets.Pack.cache
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.ControleFinanceiro.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.ControleFinanceiro.API.props
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.ControleFinanceiro.API.props
+C:\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.ControleFinanceiro.API.props

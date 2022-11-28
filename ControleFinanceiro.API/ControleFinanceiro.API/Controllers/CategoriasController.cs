@@ -23,7 +23,7 @@ namespace ControleFinanceiro.API.Controllers
         _categoriaRepositorio = categoriaRepositorio;
         }
 
-        // GET: api/Categorias
+        //GET: api/Categorias
         //[Authorize (Roles = "Administrador")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Categoria>>> GetCategorias()
@@ -31,7 +31,7 @@ namespace ControleFinanceiro.API.Controllers
             return await _categoriaRepositorio.PegarTodos().ToListAsync();
         }
 
-        // GET: api/Categorias/5
+        //GET: api/Categorias/5
         //[Authorize(Roles = "Administrador")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Categoria>> GetCategoria(int id)

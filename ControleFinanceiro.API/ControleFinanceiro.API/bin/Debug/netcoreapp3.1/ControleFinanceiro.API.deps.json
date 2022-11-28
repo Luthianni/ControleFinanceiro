@@ -33,8 +33,8 @@
         "dependencies": {
           "ControleFinanceiro.BLL": "1.0.0",
           "ControleFinanceiro.DAL": "1.0.0",
-          "FluentValidation.AspNetCore": "10.3.1",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.8",
+          "FluentValidation.AspNetCore": "11.2.2",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.12",
           "Microsoft.AspNetCore.Cors": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.15",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
@@ -315,55 +315,55 @@
           "ControleFinanceiro.API.dll": {}
         }
       },
-      "FluentValidation/10.3.1": {
+      "FluentValidation/11.2.1": {
         "runtime": {
           "lib/netstandard2.1/FluentValidation.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "10.3.1.0"
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.2.1.0"
           }
         },
         "compile": {
           "lib/netstandard2.1/FluentValidation.dll": {}
         }
       },
-      "FluentValidation.AspNetCore/10.3.1": {
+      "FluentValidation.AspNetCore/11.2.2": {
         "dependencies": {
-          "FluentValidation": "10.3.1",
-          "FluentValidation.DependencyInjectionExtensions": "10.3.1"
+          "FluentValidation": "11.2.1",
+          "FluentValidation.DependencyInjectionExtensions": "11.2.1"
         },
         "runtime": {
           "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "10.3.1.0"
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.2.2.0"
           }
         },
         "compile": {
           "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
         }
       },
-      "FluentValidation.DependencyInjectionExtensions/10.3.1": {
+      "FluentValidation.DependencyInjectionExtensions/11.2.1": {
         "dependencies": {
-          "FluentValidation": "10.3.1",
+          "FluentValidation": "11.2.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.15"
         },
         "runtime": {
           "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "10.3.1.0"
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.2.1.0"
           }
         },
         "compile": {
           "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.8": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.12": {
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
-            "assemblyVersion": "3.1.8.0",
-            "fileVersion": "3.100.820.42106"
+            "assemblyVersion": "3.1.12.0",
+            "fileVersion": "3.100.1221.7012"
           }
         },
         "compile": {
@@ -2816,7 +2816,7 @@
       },
       "ControleFinanceiro.BLL/1.0.0": {
         "dependencies": {
-          "FluentValidation.AspNetCore": "10.3.1",
+          "FluentValidation.AspNetCore": "11.2.2",
           "Microsoft.AspNetCore.Cors": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.15",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.1.15",
@@ -2839,7 +2839,7 @@
       "ControleFinanceiro.DAL/1.0.0": {
         "dependencies": {
           "ControleFinanceiro.BLL": "1.0.0",
-          "FluentValidation.AspNetCore": "10.3.1",
+          "FluentValidation.AspNetCore": "11.2.2",
           "Microsoft.AspNetCore.Cors": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.15",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.1.15",
@@ -4415,33 +4415,33 @@
       "serviceable": false,
       "sha512": ""
     },
-    "FluentValidation/10.3.1": {
+    "FluentValidation/11.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aFy876EWQi/af5q+ZcxnNdDpNtzk4XlamFsGCbtsdUx3WILX7KIy5LVc5NAgK8XmkFvuRJx8QdCIgjW8B82LFQ==",
-      "path": "fluentvalidation/10.3.1",
-      "hashPath": "fluentvalidation.10.3.1.nupkg.sha512"
+      "sha512": "sha512-ZrQD0TGd0mHqf/zErZOEaba8cBeInaJj02nqinO+0La3uE08sJ5ScTYqsCbdx9fLHsX8rh+5KH5RtL2eOUS+OA==",
+      "path": "fluentvalidation/11.2.1",
+      "hashPath": "fluentvalidation.11.2.1.nupkg.sha512"
     },
-    "FluentValidation.AspNetCore/10.3.1": {
+    "FluentValidation.AspNetCore/11.2.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-DH9JkdkEqii5EYeTqfwxmjxvl7Ga07k+RjBLIP0QV8ULH5H0L/aJg7FE60VxmLIjgXz9aUVDDVSK9KOb9k5SBQ==",
-      "path": "fluentvalidation.aspnetcore/10.3.1",
-      "hashPath": "fluentvalidation.aspnetcore.10.3.1.nupkg.sha512"
+      "sha512": "sha512-jU/MHXqg9cnOU18dY75vorP2c2WDKMan4zegOPsoc34xZVjzTEtXP0fKvkDEdeaChUVooNWuRr27u9w3sYbEFA==",
+      "path": "fluentvalidation.aspnetcore/11.2.2",
+      "hashPath": "fluentvalidation.aspnetcore.11.2.2.nupkg.sha512"
     },
-    "FluentValidation.DependencyInjectionExtensions/10.3.1": {
+    "FluentValidation.DependencyInjectionExtensions/11.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KYd5K8Jws3GBb2HIw2LnWG830m4diKKYI/EQGsAd5D8vhdmZOIiVLINEjZk4qT9ahBNZ92jgPGsY8NI2XM09Yg==",
-      "path": "fluentvalidation.dependencyinjectionextensions/10.3.1",
-      "hashPath": "fluentvalidation.dependencyinjectionextensions.10.3.1.nupkg.sha512"
+      "sha512": "sha512-WqR2kt0OidUCg9xS+YOoiDmdCu7EnYLLgQb/bX+5fTTVor+90dWmr1OdJaWlLZvg2nbwV9EfxA9FZp91+JmQtg==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.2.1",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.8": {
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sAXFFgsSEYd6PTFCzBKYBlXnb+ncclrQPMyMzARELxBv94Onqtr/JTWKih+NUr/3xR5BAs1xE6boao0Us6xcPA==",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.8",
-      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.3.1.8.nupkg.sha512"
+      "sha512": "sha512-Kl6VnydiO9kh4xGo5PugXYViy6kVNxV3UrAvF1sDmMTpkSKtcLsdHWVflzGTD8HUnm8VpvzF1z9/1cmNBeYXOg==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.12",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.3.1.12.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cors/2.2.0": {
       "type": "package",

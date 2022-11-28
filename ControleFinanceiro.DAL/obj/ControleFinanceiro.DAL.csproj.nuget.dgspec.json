@@ -10,14 +10,14 @@
         "projectUniqueName": "C:\\Projetos\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
         "projectName": "ControleFinanceiro.BLL",
         "projectPath": "C:\\Projetos\\ControleFinanceiro\\ControleFinanceiro.BLL\\ControleFinanceiro.BLL.csproj",
-        "packagesPath": "C:\\Users\\Goku\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\LuthianniA2\\.nuget\\packages\\",
         "outputPath": "C:\\Projetos\\ControleFinanceiro\\ControleFinanceiro.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Goku\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LuthianniA2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -47,7 +47,7 @@
           "dependencies": {
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[10.3.1, )"
+              "version": "[11.2.2, )"
             },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
@@ -116,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -126,14 +126,14 @@
         "projectUniqueName": "C:\\Projetos\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
         "projectName": "ControleFinanceiro.DAL",
         "projectPath": "C:\\Projetos\\ControleFinanceiro\\ControleFinanceiro.DAL\\ControleFinanceiro.DAL.csproj",
-        "packagesPath": "C:\\Users\\Goku\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\LuthianniA2\\.nuget\\packages\\",
         "outputPath": "C:\\Projetos\\ControleFinanceiro\\ControleFinanceiro.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Goku\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LuthianniA2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -167,7 +167,7 @@
           "dependencies": {
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[10.3.1, )"
+              "version": "[11.2.2, )"
             },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
@@ -236,7 +236,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

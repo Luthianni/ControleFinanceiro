@@ -8,6 +8,7 @@
       <mat-grid-tile>
         <h2 class="titulo">Categorias cadastradas</h2>
       </mat-grid-tile>
+
       <mat-grid-tile>
         <button
           mat-stroked-button
@@ -72,10 +73,8 @@
         <button
           mat-mini-fab
           color="primary"
-          [routerLink]="[
-            '/categorias/atualizarcategoria',
-            categoria.categoriaId
-          ]"
+          [routerLink]="['/categorias/atualizarcategoria',
+          categoria.categoriaId]"
         >
           <mat-icon>edit</mat-icon>
         </button>

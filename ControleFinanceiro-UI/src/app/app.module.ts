@@ -105,7 +105,7 @@ export function PegarTokenUsuario() {
     JwtModule.forRoot({
       config: {
         tokenGetter: PegarTokenUsuario,
-        allowedDomains: ['localhost:5001'],
+        allowedDomains: ['localhost:44317'],
         disallowedRoutes: [],
       },
     }),
