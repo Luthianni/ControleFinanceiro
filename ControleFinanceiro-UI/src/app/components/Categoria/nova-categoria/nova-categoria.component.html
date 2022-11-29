@@ -5,7 +5,9 @@
 <div class="divCard" *ngIf="formulario">
   <mat-card>
     <mat-card-header>
-      <mat-card-title><h3>Cadastro de categorias</h3></mat-card-title>
+      <mat-card-title>
+        <h3>Cadastro de categorias</h3>
+      </mat-card-title>
     </mat-card-header>
 
     <form [formGroup]="formulario" (ngSubmit)="EnviarFormulario()">
@@ -29,12 +31,7 @@
         <div>
           <mat-form-field>
             <mat-label>Nome</mat-label>
-            <input
-              type="text"
-              matInput
-              formControlName="nome"
-              placeholder="Digite o nome da categoria" required
-            />
+            <input type="text" matInput formControlName="nome" placeholder="Digite o nome da categoria" required />
             <mat-error *ngIf="propriedade.nome.touched && propriedade.nome.invalid">
               <sup>*</sup> Digite o nome da categoria
             </mat-error>
@@ -52,13 +49,7 @@
         <div>
           <mat-form-field>
             <mat-label>Ícone</mat-label>
-            <input
-              type="text"
-              matInput
-              formControlName="icone"
-              placeholder="Digite o código do ícone" required
-
-            />
+            <input type="text" matInput formControlName="icone" placeholder="Digite o código do ícone" required />
 
             <mat-error *ngIf="propriedade.icone.touched && propriedade.icone.invalid">
               <sup>*</sup> Digite o código do ícone

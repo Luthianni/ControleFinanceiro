@@ -15,7 +15,7 @@ export class LoginUsuarioComponent implements OnInit {
   constructor(
     private usuarioService: UsuariosService,
     private router: Router
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     this.erros = [];

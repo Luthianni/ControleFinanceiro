@@ -48,30 +48,32 @@ export class NovoCartaoComponent implements OnInit {
     return this.formulario.controls;
   }
 
-  VoltarListagem() : void {
+  VoltarListagem(): void {
     this.router.navigate(['cartoes/listagemcartoes']);
   }
 
-  EnviarFormulario() : void {
+  EnviarFormulario(): void {
     this.erros = [];
     const cartao = this.formulario.value;
 
-    this.cartoesService.NovoCartao(cartao).subscribe(resultado => {
-      this.router.navigate(['cartoes/listagemcartoes']);
-      this.snackbar.open(resultado.mensagem, null, {
-        duration: 2000,
-        horizontalPosition: 'right',
-        verticalPosition: 'top'
-      });
-    },
-    (err) => {
-      if (err.status === 400) {
-        for (const campo in err.error.errors) {
-          if (err.error.errors.hasOwnProperty(campo)) {
-          this.erros.push(err.error.errors[campo]);
+    this.cartoesService.NovoCartao(cartao).subscribe(
+      (resultado) => {
+        this.router.navigate(['cartoes/listagemcartoes']);
+        this.snackbar.open(resultado.mensagem, null, {
+          duration: 2000,
+          horizontalPosition: 'right',
+          verticalPosition: 'top',
+        });
+      },
+      (err) => {
+        if (err.status === 400) {
+          for (const campo in err.error.errors) {
+            if (err.error.errors.hasOwnProperty(campo)) {
+              this.erros.push(err.error.errors[campo]);
+            }
+          }
         }
       }
-    }
-  });
- }
+    );
+  }
 }

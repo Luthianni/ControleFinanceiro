@@ -5,9 +5,9 @@
 <div class="divcard" *ngIf="formulario">
   <mat-card>
     <mat-card-header>
-      <mat-card-title
-        ><h3>Atualizar a categoria {{ nomeCategoria }}</h3></mat-card-title
-      >
+      <mat-card-title>
+        <h3>Atualizar a categoria {{ nomeCategoria }}</h3>
+      </mat-card-title>
     </mat-card-header>
 
     <form [formGroup]="formulario" (ngSubmit)="EnviarFormulario()">
@@ -15,17 +15,9 @@
         <div>
           <mat-form-field>
             <mat-label>Nome</mat-label>
-            <input
-              type="text"
-              matInput
-              formControlName="nome"
-              placeholder="Digite o nome da categoria"
-              required
-            />
+            <input type="text" matInput formControlName="nome" placeholder="Digite o nome da categoria" required />
           </mat-form-field>
-          <mat-error
-            *ngIf="propriedade.nome.touched && propriedade.nome.Invalid"
-          >
+          <mat-error *ngIf="propriedade.nome.touched && propriedade.nome.Invalid">
             <sup>*</sup> Digite o nome da categoria
           </mat-error>
         </div>
@@ -33,17 +25,9 @@
         <div>
           <mat-form-field>
             <mat-label>Ícone</mat-label>
-            <input
-              type="text"
-              matInput
-              formControlName="icone"
-              placeholder="Digite o código do icone"
-              required
-            />
+            <input type="text" matInput formControlName="icone" placeholder="Digite o código do icone" required />
           </mat-form-field>
-          <mat-error
-            *ngIf="propriedade.icone.touched && propriedade.icone.invalid"
-          >
+          <mat-error *ngIf="propriedade.icone.touched && propriedade.icone.invalid">
             <sup>*</sup> Digite o código do Ícone
           </mat-error>
         </div>
@@ -56,9 +40,7 @@
                 tipo.nome
               }}</mat-option>
             </mat-select>
-            <mat-error
-              *ngIf="propriedade.tipoId.touched && propriedade.tipoId.invalid"
-            >
+            <mat-error *ngIf="propriedade.tipoId.touched && propriedade.tipoId.invalid">
               <sup>*</sup> Selecione o tipo adequado
             </mat-error>
           </mat-form-field>
@@ -69,12 +51,7 @@
 
       <mat-card-actions>
         <div>
-          <button
-            type="submit"
-            mat-stroked-button
-            color="primary"
-            [disabled]="formulario.invalid"
-          >
+          <button type="submit" mat-stroked-button color="primary" [disabled]="formulario.invalid">
             Atualizar
           </button>
           <button mat-stroked-button type="button" (click)="VoltarListagem()">

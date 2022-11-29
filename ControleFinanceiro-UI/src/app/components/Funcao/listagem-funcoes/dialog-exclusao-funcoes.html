@@ -4,11 +4,7 @@
 </div>
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>Não</button>
-  <button
-    mat-button
-    [mat-dialog-close]="true"
-    (click)="ExcluirFuncao(data.funcaoId)"
-  >
+  <button mat-button [mat-dialog-close]="true" (click)="ExcluirFuncao(data.funcaoId)">
     Sim
   </button>
 </mat-dialog-actions>

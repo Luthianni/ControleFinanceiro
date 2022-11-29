@@ -4,20 +4,17 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['../dashboard/dashboard.component.css']
+  styleUrls: ['../dashboard/dashboard.component.css'],
 })
 export class HeaderComponent implements OnInit {
-
   emailUsuarioLogado = localStorage.getItem('EmailUsuarioLogado');
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  EfetuarLogout(): void{
+  EfetuarLogout(): void {
     localStorage.clear();
     this.router.navigate(['usuarios/loginusuario']);
   }
-
 }

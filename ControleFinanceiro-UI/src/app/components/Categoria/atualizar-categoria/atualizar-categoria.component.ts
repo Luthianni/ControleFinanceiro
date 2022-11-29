@@ -21,13 +21,12 @@ export class AtualizarCategoriaComponent implements OnInit {
   formulario: any;
   erros: string[];
 
-
   constructor(
     private router: Router,
     private route: ActivatedRoute,
     private tiposService: TiposService,
     private categoriasService: CategoriasService,
-    private snackBar: MatSnackBar,
+    private snackBar: MatSnackBar
   ) {}
 
   ngOnInit(): void {
@@ -43,8 +42,14 @@ export class AtualizarCategoriaComponent implements OnInit {
         this.nomeCategoria = resultado.nome;
         this.formulario = new FormGroup({
           categoriaId: new FormControl(resultado.categoriaId),
-          nome: new FormControl(resultado.nome, [Validators.required, Validators.maxLength(50)]),
-          icone: new FormControl(resultado.icone, [Validators.required, Validators.maxLength(15)]),
+          nome: new FormControl(resultado.nome, [
+            Validators.required,
+            Validators.maxLength(50),
+          ]),
+          icone: new FormControl(resultado.icone, [
+            Validators.required,
+            Validators.maxLength(15),
+          ]),
           tipoId: new FormControl(resultado.tipoId, [Validators.required]),
         });
       });
@@ -63,7 +68,7 @@ export class AtualizarCategoriaComponent implements OnInit {
         this.snackBar.open(resultado.mensagem, null, {
           duration: 2000,
           horizontalPosition: 'right',
-          verticalPosition: 'top'
+          verticalPosition: 'top',
         });
       });
   }

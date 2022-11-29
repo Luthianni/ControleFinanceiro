@@ -101,7 +101,7 @@ export class DialogExclusaoCategoriasComponent {
   constructor(
     @Inject(MAT_DIALOG_DATA) public dados: any,
     private categoriasService: CategoriasService,
-    private snackBar : MatSnackBar
+    private snackBar: MatSnackBar
   ) {}
 
   ExcluirCategoria(categoriaId): void {
@@ -111,7 +111,7 @@ export class DialogExclusaoCategoriasComponent {
         this.snackBar.open(resultado.mensagem, null, {
           duration: 2000,
           horizontalPosition: 'right',
-          verticalPosition: 'top'
+          verticalPosition: 'top',
         });
       });
   }

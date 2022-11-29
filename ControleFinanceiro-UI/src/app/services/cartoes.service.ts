@@ -6,17 +6,17 @@ import { Cartao } from '../models/Cartao';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
-    'Authorization': `Bearer ${localStorage.getItem('TokenUsuarioLogado')}`,
+    Authorization: `Bearer ${localStorage.getItem('TokenUsuarioLogado')}`,
   }),
 };
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CartoesService {
   url = 'api/Cartoes';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   PegarCartaoPeloId(cartaoId: number): Observable<Cartao> {
     const apiUrl = `${this.url}/${cartaoId}`;
@@ -46,5 +46,4 @@ export class CartoesService {
     const apiUrl = `${this.url}/FiltrarCartoes/${numeroCartao}`;
     return this.http.get<Cartao[]>(apiUrl);
   }
-
 }

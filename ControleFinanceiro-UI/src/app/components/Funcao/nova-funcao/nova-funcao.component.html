@@ -5,7 +5,9 @@
 <div *ngIf="formulario" class="divCard">
   <mat-card>
     <mat-card-header>
-      <mat-card-title><h3>Cadastro de funções</h3></mat-card-title>
+      <mat-card-title>
+        <h3>Cadastro de funções</h3>
+      </mat-card-title>
     </mat-card-header>
 
     <form [formGroup]="formulario" (ngSubmit)="EnviarFormulario()">
@@ -30,16 +32,8 @@
         <div>
           <mat-form-field>
             <mat-label>Nome</mat-label>
-            <input
-              type="text"
-              formControlName="name"
-              matInput
-              placeholder="Digite o nome da função"
-              required
-            />
-            <mat-error
-              *ngIf="propriedade.name.touched && propriedade.name.invalid"
-            >
+            <input type="text" formControlName="name" matInput placeholder="Digite o nome da função" required />
+            <mat-error *ngIf="propriedade.name.touched && propriedade.name.invalid">
               <sup>*</sup> Digite o nome da função
             </mat-error>
           </mat-form-field>
@@ -48,16 +42,9 @@
         <div>
           <mat-form-field>
             <mat-label>Descrição</mat-label>
-            <input
-              type="text"
-              formControlName="descricao"
-              matInput
-              placeholder="Digite a descrição da função"
-              required
-            />
-            <mat-error
-              *ngIf="propriedade.descricao.touched && propriedade.descricao.invalid"
-            >
+            <input type="text" formControlName="descricao" matInput placeholder="Digite a descrição da função"
+              required />
+            <mat-error *ngIf="propriedade.descricao.touched && propriedade.descricao.invalid">
               <sup>*</sup> Digite a descrição da função
             </mat-error>
           </mat-form-field>
@@ -68,12 +55,7 @@
 
       <mat-card-actions>
         <div>
-          <button
-            type="submit"
-            mat-stroked-button
-            color="primary"
-            [disabled]="formulario.invalid"
-          >
+          <button type="submit" mat-stroked-button color="primary" [disabled]="formulario.invalid">
             Salvar
           </button>
           <button type="button" mat-stroked-button (click)="VoltarListagem()">
